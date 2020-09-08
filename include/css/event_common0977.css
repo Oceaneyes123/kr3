@@ -1,0 +1,48 @@
+@charset "utf-8";
+@font-face {
+  font-family:"NanumSquareRound";
+  font-style:normal;
+  font-weight:800;
+  src:url(http://cdndata.milkt.co.kr/ele/www/Include/font/square/NanumSquareRoundEB.eot);
+  src:url(http://cdndata.milkt.co.kr/ele/www/Include/font/square/NanumSquareRoundEB.eot?#iefix) format('embedded-opentype'),
+	   url(http://cdndata.milkt.co.kr/ele/www/Include/font/square/NanumSquareRoundEB.woff2) format('woff2'),
+       url(http://cdndata.milkt.co.kr/ele/www/Include/font/square/NanumSquareRoundEB.woff) format('woff'),
+       url(http://cdndata.milkt.co.kr/ele/www/Include/font/square/NanumSquareRoundEB.ttf) format('ttf');
+}
+
+
+/* 이벤트 공통 o*/
+
+/* 꼭읽어보세요 */
+.e_noti{background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/bg_notice.jpg) 50% 50% no-repeat #444;width:100%;text-align:left}
+.e_noti dl{width:840px;margin:0 auto;background:none;display:table;padding:40px 0 30px 300px}
+.e_noti dl dd{float:left;background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/ico_dot.gif) 0 10px no-repeat;font-size:14px;font-weight:100;color:#fff;letter-spacing:-1px;text-align:left;line-height:25px;min-width:368px;padding-left:8px;margin:0 34px 5px 0;}
+.e_noti dl.price {width:835px;margin:0 auto;padding:15px 0 0 305px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/bg_notice02.png) left top no-repeat}
+.e_noti dl.price:after{content:"";display:block;clear:both}
+.e_noti dl.price dd {background:none;float:left;padding:0 0;font-size:16px;color:#fff;line-height:30px;margin:0 40px 40px 0;}
+.e_noti dl.price dd em{color:#ff635c;font-weight:600}
+.e_noti02{background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/bg_notice.jpg) 50% 50% no-repeat #444;width:100%;text-align:left}
+.e_noti02 dl{width:840px;margin:0 auto;background:none;display:table;padding:40px 0 27px 300px}
+.e_noti02 dl dd{background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/ico_dot.gif) 0 10px no-repeat;font-size:15px;font-weight:100;color:#fff;letter-spacing:-1px;line-height:25px;min-width:840px;padding-left:10px;margin:0 40px 5px 0;}
+.e_noti02 dl.price {width:835px;margin:0 auto;padding:15px 0 0 305px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/bg_notice02.png) left top no-repeat}
+.e_noti02 dl.price:after{content:"";display:block;clear:both}
+.e_noti02 dl.price dd {background:none;float:left;padding:0 0;font-size:16px;color:#fff;line-height:30px;margin:0 40px 40px 0;}
+.e_noti02 dl.price dd em{color:#ff635c;font-weight:600}
+
+/* 밀크T 무료체험 프로세스 */
+.freeExp_process{height:538px}
+.freeExp_process h4{font-size:28px;font-weight:bold;color:#000;padding:86px 0 50px;height:27px}
+.freeExp_process .step li{width:207px;display:inline-block;margin-left:57px;vertical-align:top;position:relative}
+.freeExp_process .step li:first-child{margin-left:0}
+.freeExp_process .step li:after{content:'';display:block;background:url(../../images/partner/ico_process_arrow.png) left top no-repeat;width:17px;height:30px;position:absolute;top:110px;left:-37px}
+.freeExp_process .step li:first-child:after{background:none}
+.freeExp_process .step li dl dt{border-top-left-radius:23px;border-top-right-radius:23px;width:114px;height:42px;font-size:20px;font-weight:bold;color:#fff;line-height:42px;margin:0 auto}
+.freeExp_process .step li dl dd{background:#fff;width:207px;height:180px;border-radius:20px}
+.freeExp_process .step li dl dd span{display:block;font-size:20px;color:#000;font-weight:bold;height:52px}
+.freeExp_process .step li dl dd span em{font-size:14px;color:#7d7d7d;font-weight:normal;display:block;line-height:25px}
+.freeExp_process .txt_noti{text-align:left;margin:32px 0 0 70px;}
+.freeExp_process .txt_noti li{font-size:14px;color:#999898;font-weight:normal;line-height:20px}
+
+/* 삼성전자 AS센터 */
+.ascenter{position:relative;width:1140px;margin:0 auto}
+.ascenter .btn_ascenter{position:absolute;top:58px;right:25px;display:block}

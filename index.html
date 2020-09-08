@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=0.5, minimum-scale=0.5,user-scalable=no,target-densitydpi=device-dpi">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Class</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <title>밀크T초등 - 천재교육&#183;천재교과서가 만든 밀크티초등</title>
+  <link rel="stylesheet" type="text/css" href="/include/css/common_v4.css?202001022">
+  <link rel="stylesheet" type="text/css" href="/include/css/main_v3.css?201912112">
+  <script type="text/javascript" src="/include/js/jquery-1.7.min.js"></script>
+  <script type="text/javascript" src="/include/js/common_v2.js?"></script>
+  <script type="text/javascript" src="/include/js/jquery.cycle.all.js"></script>
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top" style="overflow-x:">
+  <!-- Navigation -->
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="flex-row">
+      <ul class="d-inline-flex nav justify-content-end" style="float:right">
+        <li class="nav-item">
+          <a class="nav-link" href="#">홈</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">로그인</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">가입하기</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#" style="background:#ffa500"><span>상담하기</span></a></li>
+      </ul>
+    </div>
+    <div class="mr-0 d-flex justify-content-center" style="width:100%">
+      <a href="/Main/Main_v4"><img src="img/web/black-hole.png" width="200px" alt="맛있는 공부습관 천재교육 밀크T – 매일 마시는 스마트 교과서"></a>
+    </div>
+    <div class="flex-row">
+      <ul class="nav justify-content-around">
+        <li class="nav-item">
+          <a class="nav-link" href="http://pf.kakao.com/_RgxjSxb/chat">카톡상담</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.bhen.co.kr/manual.html">수업안내</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.bhen.co.kr/leveltest.html">체험수업</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:goTo();">마이페이지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=" http://www.bhen.co.kr/board_01.html?mode=list&boardname=bo_bigcat1">게시판</a>
+        </li>
+
+      </ul>
+    </div>
+  </header>
+
+  <header id="mobile_header">
+    <div>
+      <a href="#" id="btn_menu" class="btn_menu"><span>MENU</span></a>
+      <h1 class="logo"><a href="/"><span>milkT</span></a></h1>
+      <a href="http://m.mid.milkt.co.kr" class="btn_milktmid" target="_blank"><span>milkT중학</span></a>
+    </div>
+  </header>
+
+  <script>
+    if (screen.width < 500) {
+      document.getElementById('header').style.display = 'none';
+    } else {
+      document.getElementById('mobile_header').style.display = 'none';
+    }
+  </script>
+
+  <div id="quickBtn" class="quickBtn" style="display: block;">
+      <img width="200px"  src="img/web/swirl.png" />
+  </div>
+  <script>
+  window.onresize = function(event) {
+    console.log(screen.width);
+  }
+  </script>
+  <style>
+   @media (min-device-width: 360px) and (max-device-width: 480px) {
+     .quickBtn {position:fixed;left:75%;top:40%;z-index:3;margin-left:0px;z-index:20;}
+   }
+   @media (min-device-width: 481px) and (max-device-width: 768px) {
+     .quickBtn {position:fixed;left:75%;top:40%;z-index:3;margin-left:0px;z-index:20;}
+   }
+  </style>
+
+
+  <div class="cont cont01" id="txt01">
+    <div class="cont_wrap justify-content-center">
+      <img width="100%" src="img/web/header1.png">
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+  var visibleY = function(el){
+      var rect = el.getBoundingClientRect(), top = rect.top, height = rect.height,
+      el = el.parentNode;
+      do {
+      rect = el.getBoundingClientRect();
+      if (top <= rect.bottom === false) return false;
+      // Check if the element is out of view due to a container scrolling
+      if ((top + height) <= rect.top) return false
+      el = el.parentNode;
+      } while (el != document.body);
+      // Check its within the document viewport
+      return top <= document.documentElement.clientHeight;
+    };
+
+    $('html, body').scroll(function() {
+      if(isScrolledIntoView('.cont01')){
+        console.log('a')
+      }
+     });
+
+  </script>
+
+  <div class="cont cnt1" id="mobile_txt01">
+    <img width="100%" src="img/web/header1.png" alt="밀크T는 다르다! 스마트학습, 지금부터 밀크T">
+  </div>
+
+  <script>
+    if (screen.width < 500) {
+      document.getElementById('txt01').style.display = 'none';
+    } else {
+      document.getElementById('mobile_txt01').style.display = 'none';
+    }
+  </script>
+
+  <div class="cont cont02">
+    <div class="cont_wrap justify-content-center">
+      <img width="100%" src="img/web/img1.png">
+    </div>
+  </div>
+  <div class="cont cont02">
+    <div class="cont_wrap justify-content-center">
+      <img width="100%" src="img/web/img2.png">
+    </div>
+  </div>
+  <div class="cont cont02">
+    <div class="cont_wrap justify-content-center">
+      <img width="100%" src="img/web/img3.png">
+    </div>
+  </div>
+
+  <div class="cont cont03">
+    <div class="cont_wrap" style="width:100%">
+      <img width="100%" height="auto" src="img/web/img4.png" />
+      <div class="cnt justify-content-center">
+        <ul class="nav nav-tabs tabSlide justify-content-center row">
+          <li class="nav-item col-6 align-middle pl-0 pr-0">
+            <a class="nav-link text-center border  border-dark rounded-lg align-middle" data-slide-index="0" href="#" style="width:auto;height:80px;"><strong style="font-size:3vw;">영자신문 단어/독해</strong></a>
+          </li>
+          <li class="nav-item col-6 align-middle pl-0 pr-0">
+            <a class="nav-link text-center border  border-dark rounded-sm align-middle" data-slide-index="1" href="#" style="width:auto;height:80px;"><strong style="font-size:3vw;">효과적인 암기법</strong></a>
+          </li>
+          <script>
+            $(".nav .nav-link").on("click", function() {
+              $(".nav").find(".active").removeClass("active").addClass('');
+              $(this).addClass("active");
+            });
+          </script>
+
+        </ul>
+
+
+        <div id="flexslider01" class="flexslider01">
+
+          <div class="flex-viewport" style="overflow: hidden; position: relative;">
+            <ul class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-3420px, 0px, 0px);">
+              <li style="width: 1140px; margin-right: 0px; float: left; display: block;" class="">
+                <img width="100%" height="auto" src="img/web/img5-tab1.png" draggable="false">
+              </li>
+              <li style="width: 1140px; margin-right: 0px; float: left; display: block;" class="flex-active-slide">
+                <img width="100%" height="auto" src="img/web/img6-tab2.png" draggable="false">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $('.flexslider01').flexslider({
+        manualControls: ".cont03 .tabSlide li",
+        animation: "slide",
+        slideshowSpeed: 3000,
+        directionNav: false,
+        pauseOnHover: true,
+        pauseOnAction: false
+      });
+    </script>
+  </div>
+
+
+
+  <div class="cont cont04">
+    <div class="cont_wrap">
+      <img width="100%" height="auto" src="img/web/img7.png">
+    </div>
+  </div>
+
+  <div class="cont cont05">
+    <div class="cont_wrap">
+      <img width="100%" height="auto" src="img/web/img8.png">
+    </div>
+  </div>
+
+
+
+  <div class="cont cont06">
+    <div class="cont_wrap">
+      <img width="100%" height="auto" src="http://cdndata.milkt.co.kr/ele/www/images/partner/200331/img_event06_v2.jpg" alt="밀크T는 학습효과가 증명된 스마트학습입니다">
+    </div>
+  </div>
+
+  <div class="cont cont07">
+    <div class="cont_wrap">
+      <img width="100%" height="auto" src="http://cdndata.milkt.co.kr/ele/www/images/partner/200331/img_event07.png" alt="지금 이 시간에도 수많은 초등학생들은 밀크T로 공부중">
+      <p class="btn_area">
+        <a href="javascript:;" class="btn_freeExp" alt="상담 및 무료체험 신청하기"></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="cont pb-5" style="background: #16e0e2 ">
+    <h4 class="text-center pt-5 mb-3">밀크T 무료체험 프로세스</h4>
+    <div class="cont_wrap freeExp_process text-center" class="pl-5 pr-5">
+      <img width="90%" src="img/web/step.JPG" />
+      <ul class="txt_noti" style="background: #16e0e2">
+        <li>*탭 훼손 시 삼성전자 AS를 통해 수리 후 반납</li>
+        <li>*고의적 미반납의 경우 민형사상 책임을 질 수 있으며, 분실 시 기기 가격을 배상해야 합니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="e_noti no_price" id="no_price">
+    <dl>
+      <dd>
+        기존 밀크T 체험 이력이 있는 고객은 무료체험 대상에서 제외됩니다.
+      </dd>
+      <dd>
+        무료체험 신청 후 순차적으로 해피콜이 진행됩니다.</dd>
+      <dd>
+        체험 기간 중 제공되는 갤럭시 노트 10.1은 ㈜천재교과서의 자산입니다.</dd>
+      <dd>
+        무료체험 신청은 한 아이디 당 1회로 제한됩니다.</dd>
+      <dd>
+        무료체험은 무료배송으로 진행됩니다.</dd>
+    </dl>
+  </div>
+
+  <div class="cont_noti01" id="cont_noti01">
+    <dl>
+      <dt><span class="m_bg">꼼꼼히 읽어보세요!</span></dt>
+      <dd>- 기존 밀크T 체험 이력이 있는 고객은 무료체험 대상에서 제외됩니다. </dd>
+      <dd>- 무료체험 신청 후 순차적으로 해피콜이 진행됩니다.</dd>
+      <dd>- 체험 기간 중 제공되는 갤럭시 노트 10.1은 ㈜천재교과서의 자산입니다.</dd>
+      <dd>- 무료체험 신청은 한 아이디 당 1회로 제한됩니다.</dd>
+      <dd>- 무료체험은 무료배송으로 진행됩니다.</dd>
+    </dl>
+  </div>
+
+  <script>
+    if (screen.width < 500) {
+      document.getElementById('no_price').style.display = 'none';
+    } else {
+      document.getElementById('cont_noti01').style.display = 'none';
+    }
+  </script>
+
+  <div class="common_cont" id="common_cont">
+    <div class="ascenter">
+      <img src="http://cdndata.milkt.co.kr/ele/www/Images/partner/191024/img_samsungAs.jpg" alt="Milk T-only learning machine is provided in accordance with Samsung AS compensation policy.">
+      <a href="http://www.samsungsvc.co.kr" target="_blank" class="btn_ascenter">
+        <img src="http://cdndata.milkt.co.kr/ele/www/Images/partner/common/btn_samsungAs.jpg" alt="Find Samsung Seongzan AS Center"></a>
+    </div>
+  </div>
+
+  <script>
+    if (screen.width < 500) {
+      document.getElementById('common_cont').style.display = 'none';
+    }
+  </script>
+
+  <div id="footer">
+    <script language="JavaScript">
+
+
+      function smartConv(conv1, conv2) {
+        var SEA_sale = "";
+        var SEA_others1 = conv1;
+        var SEA_others2 = conv2;
+        var SEA_others3 = "";
+        var SEA_others4 = "";
+        var SEA_others5 = "";
+        SEA_others5 = new Date().getTime();
+        var S_URL1 = 'http://' + 'tag.adgather.net/conv';
+        var SEA_url = document.location.hostname;
+        var TAG_JS = document.createElement('script');
+        TAG_JS.src = S_URL1 + '?SU=' + escape(SEA_url) + '&SS=' + SEA_sale + '&o1=' + escape(SEA_others1) + '&o2=' + escape(SEA_others2) + '&o3=' + escape(SEA_others3) + '&o4=' + escape(SEA_others4) + '&o5=' + escape(SEA_others5);
+        document.getElementsByTagName('head')[0].appendChild(TAG_JS);
+      }
+
+      function smartHttpsConv(conv1, conv2) {
+        console.log(conv1);
+        var SEA_sale = "";
+        var SEA_others1 = conv1;
+        var SEA_others2 = conv2;
+        var SEA_others3 = "";
+        var SEA_others4 = "";
+        var SEA_others5 = "";
+        SEA_others5 = new Date().getTime();
+        var S_URL1 = 'https://' + 'tag.adgather.net/conv';
+        var SEA_url = document.location.hostname;
+        var TAG_JS = document.createElement('script');
+        TAG_JS.src = S_URL1 + '?SU=' + escape(SEA_url) + '&SS=' + SEA_sale + '&o1=' + escape(SEA_others1) + '&o2=' + escape(SEA_others2) + '&o3=' + escape(SEA_others3) + '&o4=' + escape(SEA_others4) + '&o5=' + escape(SEA_others5);
+        document.getElementsByTagName('head')[0].appendChild(TAG_JS);
+      }
+
+    </script>
+    <script type="text/javascript" src="//static.tagmanager.toast.com/tag/view/995"></script>
+    <script type="text/javascript">
+      window.ne_tgm_q = window.ne_tgm_q || [];
+      window.ne_tgm_q.push({
+        tagType: 'visit',
+        device: 'web' /*web, mobile, tablet*/ ,
+        uniqValue: '',
+        pageEncoding: 'utf-8'
+      });
+    </script>
+
+
+    <div>
+      <p class="logo"><img src="http://cdndata.milkt.co.kr/ele/www/images/common/footer_logo2_v3.gif" alt="천재교과서"></p>
+      <ul class="policy">
+        <li><a href="http://www.chunjae.co.kr/" target="_blank">회사소개</a></li>
+        <li><a href="mailto:sorachobo@chunjae.co.kr">제휴문의</a></li>
+        <li><a href="/Member/Agreement" target="_self">이용약관</a></li>
+        <li><a href="/Member/Privacy_Police" target="_self"><strong>개인정보처리방침</strong></a></li>
+        <li><a href="/Common/Sitemap">사이트맵</a></li>
+      </ul>
+      <div class="family">
+        <a class="btn_family">패밀리사이트</a>
+        <ul style="display: none;">
+          <li><a href="http://www.chunjae.co.kr/" target="_blank">천재교육</a></li>
+          <li><a href="https://book.chunjae.co.kr" target="_blank">천재교육 교재</a></li>
+          <li><a href="http://mid.milkt.co.kr/" target="_blank">밀크T중학</a></li>
+          <li><a href="https://little.chunjae.co.kr/" target="_blank">리틀천재</a></li>
+          <li><a href="http://www.chunjae.co.kr/all/main/main.aspx" target="_blank">우등생전과</a></li>
+          <li><a href="https://mall.chunjae.co.kr/" target="_blank">천재교육 쇼핑몰</a></li>
+          <li><a href="http://www.edumon.co.kr/intro/" target="_blank">에듀몬</a></li>
+          <li><a href="http://hme.chunjae.co.kr/" target="_blank">해법수학학력평가</a></li>
+          <li><a href="http://letsgo.chunjae.co.kr/" target="_blank">렛츠고</a></li>
+          <li><a href="http://www.hbiyes.co.kr/main/Main.aspx" target="_blank">해법아이</a></li>
+          <li><a href="http://yessay-www.chunjae.co.kr/Main/Main.aspx" target="_blank">예스논술</a></li>
+          <li><a href="http://www.myall100.co.kr/main/main.aspx" target="_blank">올백</a></li>
+          <li><a href="http://www.e-chunjae.co.kr/main/main.aspx" target="_blank">이천재몰</a></li>
+        </ul>
+      </div>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $(document).bind("click", function(e) {
+            var clickClass = $(e.target).attr("class");
+            if (clickClass != "btn_family") {
+              if ($(".family ul").css("display") != "none") {
+                $(".family").find("ul").hide();
+              }
+            } else {
+              if ($(".family ul").css("display") == "none") {
+                $(".family").find("ul").show();
+              } else {
+                $(".family").find("ul").hide();
+              }
+            }
+          });
+
+          ServerChk();
+        });
+
+        function goIsmsPopup() {
+          window.open('/Html/popup/2019/190227/ismsPopup.html', 'ismsPopup', 'width=900, height=600, scrollbars=no')
+        }
+
+        function ServerChk() {
+
+          $.ajax({
+            url: "/Common/SeverIP_CHK",
+            type: "post",
+            async: false,
+            datatype: "json",
+            data: "",
+            success: function(data, status) {
+              $("#pSeverChk").html(data["Return"]);
+            },
+            error: function(e) {
+
+            }
+          });
+
+        }
+      </script>
+
+      <div class="cominfo">
+        <ul class="info">
+          <li>(주)천재교과서 |&nbsp;</li>
+          <li>대표 : 윤문현, 서울시 금천구 가산디지털2로 169-21 A동 일부(원격학원), 서울시 금천구 가산디지털2로 169-21 A동</li>
+          <li>신고기관명 : 서울시남부교육지원청 | 학원설립 운영등록번호 : 제5434호 천재교과서밀크티초등원격학원 <a href="javascript:mf_EduCerti();">[정보조회]</a></li>
+          <li class="block">사업자등록번호 : 119-81-70643 | 통신판매업신고번호: 제 2016 -서울금천- 1306호 <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1198170643&amp;apv_perm_no=" target="_blank">[정보조회]</a></li>
+          <li class="block">부가통신사업신고번호 : 제 2-01-16-0189 호</li>
+          <li class="copy">COPYRIGHT© 2015 CHUNJAE TEXTBOOK CORPORATION. ALL RIGHTS RESERVED</li>
+        </ul>
+
+        <p class="isms"><a href="javascript:goIsmsPopup();"><img src="http://cdndata.milkt.co.kr/ele/www/images/common/ico_isms.png" alt="isms"></a></p>
+      </div>
+
+      <div class="csCenter">
+        <p><a href="/Cs/Cs_FAQ"><img src="http://cdndata.milkt.co.kr/ele/www/images/common/txt_cscenter_v2.gif" alt="고객센터 1577-1533"></a></p>
+        <p id="pSeverChk" style="color:#EAEAEA">1</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer id="footer_new">
+    <ul class="ml-0 mr-0">
+      <li><a href="/Member/PrivacyPolicy"><strong>개인정보 처리방침</strong></a></li>
+      <li><a href="/marketing/CustomerSatisfactionCenter">고객 만족센터</a></li>
+      <li><a href="mailto:sorachobo@chunjae.co.kr">제휴문의</a></li>
+      <li><a href="http://www.milkt.co.kr/main/main_v4?PCVersionView=Y">PC버전</a></li>
+    </ul>
+    <div>
+      <strong>(주)천재교과서</strong> | 서울시 금천구 가산디지털2로 169-21 A | TEL <span>1577-1533</span><br>
+      대표 <strong>윤문현</strong> | 사업자등록번호 <span>119-81-70643</span><br>
+      학원설립 운영등록번호 : 제5434호 천재교과서밀크티초등원격학원 <a href="/html/Pop_EduCerti.html">정보조회&gt;</a><br>
+      통신판매업신고번호 <span>제 2016 -서울금천- 1306호</span> <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1198170643&amp;apv_perm_no=" target="_blank">정보조회&gt;</a><br>
+      부가통신사업신고번호 <span>제 2-01-16-0189 호</span>
+      <p>COPYRIGHT© 2015 CHUNJAE TEXTBOOK&nbsp;CORPORATION. ALL RIGHTS RESERVED.</p>
+    </div>
+    <div><span id="pSeverChk" style="color:#EAEAEA"></span></div>
+  </footer>
+
+  <script>
+    if (screen.width < 500) {
+      document.getElementById('footer').style.display = 'none';
+    } else {
+      document.getElementById('footer_new').style.display = 'none';
+    }
+  </script>
+
+
+  <!-- Scroll to Top Button-->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+
+
+</body>
+
+</html>
+
+<style lang="text/css">
+
+
+</style>

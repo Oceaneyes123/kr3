@@ -1,0 +1,1084 @@
+@charset "utf-8";
+/* Style Reset */
+
+/*스포카 한 산스 font*/
+@font-face {
+	font-family: 'SpoqaHanSans';
+	font-style: normal;
+	font-weight: 400;
+		src: url('http://cdndata.milkt.co.kr/ele/www/Include/font/SpoqaHanSans-Regular.eot');
+		src: url('http://cdndata.milkt.co.kr/ele/www/Include/font/SpoqaHanSans-Regular.ttf') format('truetype'),
+				 url('http://cdndata.milkt.co.kr/ele/www/Include/font/Spoqa-Han-Sans-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'SpoqaHanSans';
+	font-style: normal;
+	font-weight: light;
+		src: url('http://cdndata.milkt.co.kr/ele/www/Include/font/SpoqaHanSans-Light.eot');
+		src: url('http://cdndata.milkt.co.kr/ele/www/Include/font/SpoqaHanSans-Light.ttf') format('truetype'),
+				 url('http://cdndata.milkt.co.kr/ele/www/Include/font/Spoqa-Han-Sans-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'SpoqaHanSans';
+	font-style: normal;
+	font-weight: bold;
+    src: url('http://cdndata.milkt.co.kr/ele/www/Include/font/SpoqaHanSans-Bold.eot');
+		src: url('http://cdndata.milkt.co.kr/ele/www/Include/font/SpoqaHanSans-Bold.ttf') format('truetype'),
+         url('http://cdndata.milkt.co.kr/ele/www/Include/font/Spoqa-Han-Sans-Bold.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+    src: url(http://www.milkt.co.kr/Include/font/notokr-regular.eot),
+         url(http://www.milkt.co.kr/Include/font/notokr-regular.woff) format('woff'),
+		 url(http://www.milkt.co.kr/Include/font/NotoSansKR-Light.otf) format('opentype');
+
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 600;
+    src: url(http://www.milkt.co.kr/Include/font/notokr-medium.eot);
+    src: url(http://www.milkt.co.kr/Include/font/notokr-medium.eot?#iefix) format('embedded-opentype'),
+         url(http://www.milkt.co.kr/Include/font/notokr-medium.woff2) format('woff2'),
+         url(http://www.milkt.co.kr/Include/font/notokr-medium.woff) format('woff'),
+		 url(http://www.milkt.co.kr/Include/font/NotoSansKR-Regular.otf) format('opentype'),
+         url(http://www.milkt.co.kr/Include/font/notokr-medium.svg#notokr-medium) format('svg');
+
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+    src: url(http://www.milkt.co.kr/Include/font/notokr-bold.eot);
+    src: url(http://www.milkt.co.kr/Include/font/notokr-bold.eot?#iefix) format('embedded-opentype'),
+         url(http://www.milkt.co.kr/Include/font/notokr-bold.woff2) format('woff2'),
+         url(http://www.milkt.co.kr/Include/font/notokr-bold.woff) format('woff'),
+		 url(http://www.milkt.co.kr/Include/font/NotoSansKR-Medium.otf) format('opentype'),
+         url(http://www.milkt.co.kr/Include/font/notokr-bold.svg#notokr-bold) format('svg');
+
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 800;
+  src: url(http://www.milkt.co.kr/Include/font/square/NanumSquareRoundEB.eot);
+  src: url(http://www.milkt.co.kr/Include/font/square/NanumSquareRoundEB.eot?#iefix) format('embedded-opentype'),
+	   url(http://www.milkt.co.kr/Include/font/square/NanumSquareRoundEB.woff2) format('woff2'),
+       url(http://www.milkt.co.kr/Include/font/square/NanumSquareRoundEB.woff) format('woff'),
+       url(http://www.milkt.co.kr/Include/font/square/NanumSquareRoundEB.ttf) format('ttf');
+}
+
+html{overflow-y:scroll}
+body{width:100%;height:100%;min-width:1140px}
+body.pop_body{width:100%;height:100%;min-width:10px}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0}
+body{font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;font-size:12px;color:#777;background:#fff;line-height:1.2em;font-weight:100}
+select, textarea{font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;font-size:12px;color:#777}
+ol, ul, dl{list-style:none}
+em, address{font-style:normal}
+a{text-decoration:none;color:#777}
+a:hover, a:active, a:link{text-decoration:none;cursor:pointer}
+a:hover{color:#529cff}
+table, th, td{font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;border-spacing:0;border-collapse:collapse;text-align:center}
+img{border:0;vertical-align:middle}
+caption, legend{overflow:hidden;visibility:hidden;width:0;height:0;line-height:0;font-size:0}
+strong{font-weight:600}
+hr{display:none}
+/*fieldset, input{border:0}*/
+fieldset{border:0}
+input{font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;color:#777}
+input[type=checkbox]{padding:0;margin:3px;width:13px;height:13px}
+input[type=radio]{padding:0;margin:3px;width:13px;height:13px}
+select{font-size:12px;vertical-align:middle;font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;color:#777}
+input[type=image]{cursor:pointer}
+
+/* 페이지 중앙정렬(1140px) */
+.centerBox{width:1140px; margin:0 auto;}
+
+/* Skip Navigation */
+#skip{width:100%;height:0px;top:0px;left:0px}
+#skip a{display:block;position:absolute;top:0px;text-indent:-9999px;overflow:hidden}
+#skip a:focus, #skip a:active{display:block;position:absolute;z-index:11;top:0px;width:100%;height:14px;padding:6px 0px;font-weight:900;line-height:14px;text-align:center;color:#F5CF1D;background:#D12727;font-size:14px;text-indent:0px}
+
+/* Layout */
+html, body {font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;height:100%;margin:0;padding:0}
+#wrap{position:relative;width:100%;height:100%;margin:0;padding:0}
+#header{height:135px;margin:0;padding:0;border-bottom:0}
+#container{position:relative;width:100%;min-height:100%;margin:-130px auto 0 auto;*zoom:1}
+*html #container{height:100%}
+#content{width:100%;*zoom:1;padding:130px 0 0;margin:0 auto}
+#content:after{content:"";display:block;clear:both}
+#cont{width:100%;padding:0;margin:0 auto;min-height:650px !important}
+#cont.fullwidth{width:100%;padding:0;margin:0 auto;min-height:650px !important;position:relative}
+#footer{clear:both;height:150px;border-top:1px solid #e9e9e9;background:#fff;z-index:1}
+#aside{float:left;width:228px;margin:58px 44px 0 0;padding:0px 0 0}
+#aside+#cont{float:left;width:868px;margin:58px 0 0}
+#cont::after{content:"";display:block;clear:both}
+.blind{position:absolute;visibility:hidden;overflow:hidden;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+
+/* 퀵메뉴 */
+#quickmenu{z-index:2;position:absolute;top:153px;left:50%;width:120px;margin-left:585px;padding:0 0 0 0;font-size:11px}
+#quickmenu a{display:block;margin:0 0 0 0;}
+#quickmenu a.top{margin:0;border:0}
+#quickmenu.quick{width:100px;background:none;padding:0}
+#quickmenu.quick .quick_01{margin:0 auto}
+#quickmenu.quick .quick_02{margin:20px auto 0;text-align:center}
+#quickmenu.quick a{border:0;background:none}
+#quickmenu.quick .quick_02 a{margin:3px 0 0}
+
+/* Hedader */
+#header{background:#fff}
+#header img{vertical-align:top}
+#header.active{}
+#header>div{z-index:100;position:relative;width:100%;margin:0 auto;text-align:left}
+#header h1{width:200px;margin:0 auto}
+#header h1 img{vertical-align:top}
+#header h2.chunhae{position:absolute;top:0;right:0;padding:0;margin:0;display:none}
+#header #tnb{padding-top:5px;display:block;height:22px;}
+#header #tnb .left_menu{float:left}
+/*#header #tnb .right_menu{float:right}181226 크리스마스 로고 띄울시 로그인후 아이디가 보이지않음으로 수정*/
+#header #tnb .right_menu{float:right;position:absolute;right:0;z-index:99}
+#header #tnb>ul{overflow:hidden;font-family:Dotum, '돋움', Arial, sans-serif}
+#header #tnb>ul:after{content:"";display:block;overflow:hidden}
+#header #tnb>ul>li{float:left;margin:5px 0 0 0;padding:0 8px 0 9px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/tnb_bg.gif) no-repeat left 3px}
+#header #tnb>ul>li:first-child{background:none;padding-left:0}
+#header #tnb ul.left_menu li a{display:inline-block;height:15px;line-height:16px}
+#header #tnb>ul>li.main01 a{padding:0 0 0 21px;color:#0093d8;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/ico_tnb01.png) no-repeat 0 50%}
+#header #tnb>ul>li.main02 a{padding:0 0 0 31px;color:#0093d8;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/ico_tnb03.png) no-repeat 0 50%}
+#header #tnb>ul>li.milkt_mid{margin:0;background-position:0 6px;padding-right:0}
+#header #tnb>ul>li.tsellpa{margin:0;background-position:0 6px;}
+#header #tnb>ul>li img{vertical-align:top}
+#header #tnb>ul>li a{color:#9d9d9d;font-size:13px;font-weight:bold}
+#header #tnb>ul>li a:hover{color:#529cff}
+#header #tnb>ul>li.btn_my_study{background:none; margin-top:0; padding-left:0;}
+#header #tnb>ul>li.btn_my_study>a{padding:4px 10px; box-sizing:border-box; display:inline-block; background:#3d8af0; color:#fff; border-radius:4px; font-size:12px;}
+#header #tnb>ul>li a.btn_mystudy{padding:4px 10px; background:#3d8af0; color:#fff!important; border-radius:4px; display:inline-block; font-size:12px; margin-top:-5px;}
+#header .header_top{width:1140px;height:88px;margin:0 auto;position:relative;z-index:100}
+#header.winter .header_top{background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/special_logo_winter.gif) 48% -2px no-repeat;}
+#header.topBn_20171225 .header_top{background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/special_logo_1225.gif) 50% 0 no-repeat;}
+#header.topBn_20180101 .header_top{background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/special_logo_0101.jpg) 50% 0 no-repeat;}
+#header.winter h1,#header.topBn_20171225 h1,#header.topBn_20180101 h1{display:block;width:240px}
+#header.winter h1 a,#header.topBn_20171225 h1 a,#header.topBn_20180101 h1 a{display:block;height:55px}
+#header.winter h1 img,#header.topBn_20171225 h1 img,#header.topBn_20180101 h1 img{display:none}
+#header .gnb_area{width:100%;height:44px;margin:0 0 0;border-top:1px solid #e3e3e3}
+#header .gnb_area .gnb_back{background:url(../../../cdndata.milkt.co.kr/ele/www/images/main/2017/bg_gnbBack.gif) left bottom repeat-x #fff;width:100%;height:0;position:absolute;left:0;display:none;border-top:1px solid #e9e9e9;*z-index:-1}
+#header .gnb_area>ul#gnb{width:1140px;height:46px;padding:0;margin:0 auto}
+#header .gnb_area>ul#gnb:after{content:"";display:block;overflow:hidden}
+#header .gnb_area>ul#gnb>li{background:none;width:163px;height:47px;position:relative;float:left;font-size:18px;font-weight:100;text-align:left}
+#header .gnb_area>ul#gnb>li>a{display:inline-block;vertical-align:top;padding:0;margin:0 auto;height:43px;line-height:47px;color:#000;font-weight:100}
+#header .gnb_area>ul#gnb>li:hover>a,
+#header .gnb_area>ul#gnb>li.hover>a{color:#0094d9}
+#header .gnb_area>ul#gnb>li.on>a{color:#0094d9}
+#header .gnb_area>ul#gnb>li.on>a{border-bottom:3px solid #0094d9}
+#header .gnb_area>ul#gnb>li>a:hover{border-bottom:3px solid #0094d9}
+#header .gnb_area>ul#gnb>li>a.hover{border-bottom:3px solid #0094d9}
+#header .gnb_area>ul#gnb>li.milkt_apply{width:162px;background:none;text-align:right}
+#header .gnb_area>ul#gnb>li.milkt_apply>a{color:#0094d9}
+#header .gnb_area>ul#gnb>li:first-child{text-align:left;width:163px}
+#header .gnb_area>ul#gnb>li>a img{vertical-align:top}
+#header .gnb_area>ul#gnb>li.milkt_apply>a span{display:inline-block;vertical-align:middle;width:38px;height:20px;margin:-1px 0 0 0;padding:0;background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/ico_militbuy.png) 0 0 no-repeat;font-size:0;}
+#header .gnb_area>ul#gnb>li .n_sub{position:absolute;top:45px;padding-top:0;left:0;display:none;height:0;overflow:hidden;z-index:100}
+#header .gnb_area>ul#gnb>li .n_sub:after{content:"";display:block;clear:both}
+#header .gnb_area>ul#gnb>li .n_sub>ul>li{font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;margin-bottom:17px;width:252px;height:20px;*height:20px;padding:0 2px;font-size:15px;color:#000;letter-spacing:-1px;text-align:left;font-weight:100}
+#header .gnb_area>ul#gnb>li .n_sub>ul>li:first-child{padding-top:25px}
+#header .gnb_area>ul#gnb>li .n_sub>ul>li.last{margin:0;}
+#header .gnb_area>ul#gnb>li .n_sub>ul>li a{display:block;*zoom:1;background:none;color:#000;padding:0;height:20px;line-height:20px}
+#header .gnb_area>ul#gnb>li .n_sub>ul>li a span{width:7px;height:20px;padding:0;font-size:0;display:inline-block;vertical-align:top;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/dot_gnb.png) 0 8px no-repeat}
+#header .gnb_area>ul#gnb>li:hover>.n_sub>ul>li a{background-image:none;color:#000;height:20px}
+#header .gnb_area>ul#gnb>li:hover>.n_sub>ul>li a:hover,
+#header .gnb_area>ul#gnb>li:hover>.n_sub>ul>li a.on{background-image:none;color:#0094d9;height:20px}
+#header .gnb_area>ul#gnb>li.hover>.n_sub>ul>li a,
+#header .gnb_area>ul#gnb>li.on>.n_sub>ul>li a{background-image:none;color:#000;height:20px}
+#header .gnb_area>ul#gnb>li.hover>.n_sub>ul>li a:hover,
+#header .gnb_area>ul#gnb>li.hover>.n_sub>ul>li a.on,
+#header .gnb_area>ul#gnb>li.on>.n_sub>ul>li a.on,
+#header .gnb_area>ul#gnb>li.on>.n_sub>ul>li a:hover{background-image:none;color:#0094d9}
+#header .gnb_area>ul#gnb>li:hover>.n_sub>ul>li a.on span,
+#header .gnb_area>ul#gnb>li:hover>.n_sub>ul>li a:hover span,
+#header .gnb_area>ul#gnb>li.hover>.n_sub>ul>li a.on span,
+#header .gnb_area>ul#gnb>li.on>.n_sub>ul>li a.on span{background-position:0 -92px}
+
+/* hme 추가 */
+#header .gnb_area_v2{width:100%;height:44px;margin:0 0 0;border-top:1px solid #e3e3e3}
+#header .gnb_area_v2 .gnb_back{background:url(../../../cdndata.milkt.co.kr/ele/www/images/main/2017/bg_gnbBack.gif) left bottom repeat-x #fff;width:100%;height:0;position:absolute;left:0;display:none;border-top:1px solid #e9e9e9;*z-index:-1}
+#header .gnb_area_v2>ul#gnb{width:1140px;height:46px;padding:0;margin:0 auto}
+#header .gnb_area_v2>ul#gnb:after{content:"";display:block;overflow:hidden}
+#header .gnb_area_v2>ul#gnb>li{background:none;width:202px;height:47px;position:relative;float:left;font-size:18px;font-weight:100;text-align:left}
+#header .gnb_area_v2>ul#gnb>li>a{display:inline-block;vertical-align:top;padding:0;margin:0 auto;height:43px;line-height:47px;color:#000;font-weight:100}
+#header .gnb_area_v2>ul#gnb>li:hover>a,
+#header .gnb_area_v2>ul#gnb>li.hover>a{color:#0094d9}
+#header .gnb_area_v2>ul#gnb>li.on>a{color:#0094d9}
+#header .gnb_area_v2>ul#gnb>li.on>a{border-bottom:3px solid #0094d9}
+#header .gnb_area_v2>ul#gnb>li>a:hover{border-bottom:3px solid #0094d9}
+#header .gnb_area_v2>ul#gnb>li>a.hover{border-bottom:3px solid #0094d9}
+#header .gnb_area_v2>ul#gnb>li.milkt_apply{width:120px;background:none;text-align:right}
+#header .gnb_area_v2>ul#gnb>li.milkt_apply>a{color:#0094d9}
+#header .gnb_area_v2>ul#gnb>li:first-child{text-align:left;width:205px}
+#header .gnb_area_v2>ul#gnb>li:nth-child(4){width:183px}
+#header .gnb_area_v2>ul#gnb>li:nth-child(5){width:226px}
+#header .gnb_area_v2>ul#gnb>li:nth-child(6){width:122px}
+#header .gnb_area_v2>ul#gnb>li>a img{vertical-align:top}
+#header .gnb_area_v2>ul#gnb>li.milkt_apply>a span{display:inline-block;vertical-align:middle;width:38px;height:20px;margin:-1px 0 0 0;padding:0;background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/ico_militbuy.png) 0 0 no-repeat;font-size:0;}
+#header .gnb_area_v2>ul#gnb>li .n_sub{position:absolute;top:45px;padding-top:0;left:0;display:none;width:100%;height:0;overflow:hidden;z-index:100}
+#header .gnb_area_v2>ul#gnb>li .n_sub:after{content:"";display:block;clear:both}
+#header .gnb_area_v2>ul#gnb>li .n_sub>ul>li{font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;margin-bottom:17px;width:252px;height:20px;*height:20px;padding:0 2px;font-size:15px;color:#000;letter-spacing:-1px;text-align:left;font-weight:100}
+#header .gnb_area_v2>ul#gnb>li .n_sub>ul>li:first-child{padding-top:25px}
+#header .gnb_area_v2>ul#gnb>li .n_sub>ul>li.last{margin:0;}
+#header .gnb_area_v2>ul#gnb>li .n_sub>ul>li a{display:block;*zoom:1;background:none;color:#000;padding:0;height:20px;line-height:20px}
+#header .gnb_area_v2>ul#gnb>li .n_sub>ul>li a span{width:7px;height:20px;padding:0;font-size:0;display:inline-block;vertical-align:top;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/dot_gnb.png) 0 8px no-repeat}
+#header .gnb_area_v2>ul#gnb>li:hover>.n_sub>ul>li a{background-image:none;color:#000;height:20px}
+#header .gnb_area_v2>ul#gnb>li:hover>.n_sub>ul>li a:hover,
+#header .gnb_area_v2>ul#gnb>li:hover>.n_sub>ul>li a.on{background-image:none;color:#0094d9;height:20px}
+#header .gnb_area_v2>ul#gnb>li.hover>.n_sub>ul>li a,
+#header .gnb_area_v2>ul#gnb>li.on>.n_sub>ul>li a{background-image:none;color:#000;height:20px}
+#header .gnb_area_v2>ul#gnb>li.hover>.n_sub>ul>li a:hover,
+#header .gnb_area_v2>ul#gnb>li.hover>.n_sub>ul>li a.on,
+#header .gnb_area_v2>ul#gnb>li.on>.n_sub>ul>li a.on,
+#header .gnb_area_v2>ul#gnb>li.on>.n_sub>ul>li a:hover{background-image:none;color:#0094d9}
+#header .gnb_area_v2>ul#gnb>li:hover>.n_sub>ul>li a.on span,
+#header .gnb_area_v2>ul#gnb>li:hover>.n_sub>ul>li a:hover span,
+#header .gnb_area_v2>ul#gnb>li.hover>.n_sub>ul>li a.on span,
+#header .gnb_area_v2>ul#gnb>li.on>.n_sub>ul>li a.on span{background-position:0 -92px}
+#header .gnb_area_v2>ul#gnb>li .n_sub .img_bnr{margin-top:30px;margin-left:0px;}
+
+/* T셀파 , 영재교육 연구소 추가 및 변경 2018.08.10 */
+#header .gnb_area_v3{width:100%;height:44px;margin:0 0 0;border-top:1px solid #e3e3e3}
+#header .gnb_area_v3 .gnb_back{background:url(../../../cdndata.milkt.co.kr/ele/www/images/main/2017/bg_gnbBack.gif) left bottom repeat-x #fff;width:100%;height:0;position:absolute;left:0;display:none;border-top:1px solid #e9e9e9;*z-index:-1}
+#header .gnb_area_v3>ul#gnb{width:1140px;height:46px;padding:0;margin:0 auto}
+#header .gnb_area_v3>ul#gnb:after{content:"";display:block;overflow:hidden}
+#header .gnb_area_v3>ul#gnb>li{background:none;width:202px;height:47px;position:relative;float:left;font-size:18px;font-weight:100;text-align:left}
+#header .gnb_area_v3>ul#gnb>li>a{display:inline-block;vertical-align:top;padding:0;margin:0 auto;height:43px;line-height:47px;color:#000;font-weight:100}
+#header .gnb_area_v3>ul#gnb>li:hover>a,
+#header .gnb_area_v3>ul#gnb>li.hover>a{color:#0094d9}
+#header .gnb_area_v3>ul#gnb>li.on>a{color:#0094d9}
+#header .gnb_area_v3>ul#gnb>li.on>a{border-bottom:3px solid #0094d9}
+#header .gnb_area_v3>ul#gnb>li>a:hover{border-bottom:3px solid #0094d9}
+#header .gnb_area_v3>ul#gnb>li>a.hover{border-bottom:3px solid #0094d9}
+#header .gnb_area_v3>ul#gnb>li.milkt_apply{width:120px;background:none;text-align:right}
+#header .gnb_area_v3>ul#gnb>li.milkt_apply>a{color:#0094d9}
+#header .gnb_area_v3>ul#gnb>li:first-child{text-align:left;width:205px}
+#header .gnb_area_v3>ul#gnb>li:nth-child(2){width:212px}
+#header .gnb_area_v3>ul#gnb>li:nth-child(3){width:227px}
+#header .gnb_area_v3>ul#gnb>li:nth-child(4){width:173px}
+#header .gnb_area_v3>ul#gnb>li:nth-child(5){width:203px}
+#header .gnb_area_v3>ul#gnb>li>a img{vertical-align:top}
+#header .gnb_area_v3>ul#gnb>li.milkt_apply>a span{display:inline-block;vertical-align:middle;width:38px;height:20px;margin:-1px 0 0 0;padding:0;background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/ico_militbuy.png) 0 0 no-repeat;font-size:0;}
+#header .gnb_area_v3>ul#gnb>li .n_sub{position:absolute;top:45px;padding-top:0;left:0;display:none;height:0;overflow:hidden;z-index:100}
+#header .gnb_area_v3>ul#gnb>li .n_sub:after{content:"";display:block;clear:both}
+#header .gnb_area_v3>ul#gnb>li .n_sub>ul>li{font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;margin-bottom:17px;width:252px;height:20px;*height:20px;padding:0 2px;font-size:15px;color:#000;letter-spacing:-1px;text-align:left;font-weight:100;}
+#header .gnb_area_v3>ul#gnb>li .n_sub>ul>li:first-child{padding-top:25px}
+#header .gnb_area_v3>ul#gnb>li .n_sub>ul>li.last{margin:0;}
+#header .gnb_area_v3>ul#gnb>li .n_sub>ul>li a{display:block;*zoom:1;background:none;color:#000;padding:0;height:20px;line-height:20px}
+#header .gnb_area_v3>ul#gnb>li .n_sub>ul>li a span{width:7px;height:20px;padding:0;font-size:0;display:inline-block;vertical-align:top;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/dot_gnb.png) 0 8px no-repeat}
+#header .gnb_area_v3>ul#gnb>li:hover>.n_sub>ul>li a{background-image:none;color:#000;height:20px}
+#header .gnb_area_v3>ul#gnb>li:hover>.n_sub>ul>li a:hover,
+#header .gnb_area_v3>ul#gnb>li:hover>.n_sub>ul>li a.on{background-image:none;color:#0094d9;height:20px}
+#header .gnb_area_v3>ul#gnb>li.hover>.n_sub>ul>li a,
+#header .gnb_area_v3>ul#gnb>li.on>.n_sub>ul>li a{background-image:none;color:#000;height:20px}
+#header .gnb_area_v3>ul#gnb>li.hover>.n_sub>ul>li a:hover,
+#header .gnb_area_v3>ul#gnb>li.hover>.n_sub>ul>li a.on,
+#header .gnb_area_v3>ul#gnb>li.on>.n_sub>ul>li a.on,
+#header .gnb_area_v3>ul#gnb>li.on>.n_sub>ul>li a:hover{background-image:none;color:#0094d9}
+#header .gnb_area_v3>ul#gnb>li:hover>.n_sub>ul>li a.on span,
+#header .gnb_area_v3>ul#gnb>li:hover>.n_sub>ul>li a:hover span,
+#header .gnb_area_v3>ul#gnb>li.hover>.n_sub>ul>li a.on span,
+#header .gnb_area_v3>ul#gnb>li.on>.n_sub>ul>li a.on span{background-position:0 -92px}
+
+/* Footer */
+#footer>div{position:relative;width:1140px;margin:0 auto;height:205px;background:none}
+#footer .logo{position:absolute;top:40px;left:0}
+#footer .logo02{position:absolute;top:140px;left:0}
+#footer ul.policy{position:absolute;top:42px;left:172px}
+#footer ul.policy :after{content:"";display:block;clear:both}
+#footer ul.policy li{float:left;color:#000;font-size:15px;padding:0 18px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/footer_line.gif) no-repeat 0 1px}
+#footer ul.policy li:first-child{padding:0 24px 0 0;background:none}
+#footer ul.policy li a{color:#000}
+#footer ul.policy li a:hover{color:#039bdd}
+#footer .family{position:absolute;top:31px;left:694px;color:#949494;z-index:10}
+#footer .family>a{position:absolute;top:0;left:0;display:inline;width:142px;height:33px;line-height:33px;cursor:pointer;padding:0 0 0 16px;font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;font-size:15px;color:#000;border:1px solid #ccc;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/arrow_family.png) no-repeat 133px 50%}
+#footer .family ul{display:none;position:absolute;bottom:0px;left:0;background:#fff;width:142px;padding:9px 0 0 16px;border:1px solid #ccc;border-bottom:0}
+#footer .family ul li{height:25px;font-size:15px;color:#000}
+#footer .cominfo{clear:both;position:absolute;top:85px;left:172px;width:725px;letter-spacing:-2px}
+#footer .cominfo address{font-size:12px;color:#898a8a;line-height:24px}
+#footer .cominfo ul:after{content:"";display:block;clear:both}
+#footer .cominfo ul{width:715px}
+#footer .cominfo ul li{font-size:12px;color:#898a8a;line-height:24px;margin:0 0 0 0;display:inline-block;font-family:'돋움',dotum,sans-serif}
+#footer .cominfo ul li.block{display:block}
+#footer .cominfo ul li.link{width:520px;margin-right:16px;}
+#footer .cominfo ul li.link a{color:#039bdd}
+#footer .cominfo ul li.link a:hover{color:#039bdd}
+#footer .cominfo ul li a{font-weight:600;color:#039bdd;font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;font-size:12px}
+#footer .copy{margin:5px 0 0 0; color:#c2c2c2!important; letter-spacing:-1px;}
+#footer .cominfo ul li .info_search{margin-top:-4px;margin-right:65px;color:#9f9e9e}
+#footer .cominfo ul li .info_search02{margin-top:-4px;margin-right:60px;color:#9f9e9e}
+#footer .cominfo ul.info li.maR01{}
+#footer .cominfo ul.info li.maR02{margin-right:18px;}
+#footer .cominfo ul.info_2{margin-top:18px}
+#footer .cominfo ul.info_2 li{font-size:11px;color:#9f9e9e;line-height:1.5;margin:0 5px 0 0;display:inline;letter-spacing:-1px}
+#footer .cominfo ul.info_2 li.maR01{margin-right:66px;*margin-right:69px}
+#footer .cominfo ul.info_2 li.maR02{margin-right:131px;}
+#footer .csCenter{display:block;position:absolute;right:0;top:32px;text-align:right}
+#footer .csCenter p,.csCenter em,.csCenter span{display:block}
+#footer .csCenter p{font-size:16px;line-height:18px;color:#666;padding-bottom:10px}
+#footer .csCenter em{font-family:'Arial',sans-serif;font-size:26px;font-weight:900;color:#666}
+#footer .csCenter span{margin-top:10px;font-size:11px;color:#a7a6a6}
+#footer .csCenter .btn_more{background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/ico_more02.png) left 5px no-repeat;padding-left:10px;font-size:13px;color:#0094d9;font-weight:100;position:absolute;top:0px;right:-1px;display:block}
+#footer .cominfo .isms{position:absolute;right:40px;top:0}
+
+/* aside없는 서브화면  */
+#content>#cont .title{clear:both;width:1140px;height:40px;margin:0 auto;margin-top:58px}
+#content>#cont .title h3{height:21px;line-height:21px;font-weight:600;font-size:21px;color:#212121}
+#content>#cont .title h2{float:left;height:36px;line-height:36px;margin-right:7px;vertical-align:bottom;border:0;font-weight:600;font-size:22px;color:#4e4e4e}
+#content>#cont .title03{clear:both;width:868px;height:40px;margin:0 auto;margin-top:50px;border-bottom:1px dashed #9e9e9e}
+#content>#cont .title04{clear:both;width:868px;height:40px;margin:0 auto;margin-top:50px;border-bottom:2px solid #0094da !important}
+#content>#cont .sub_cont{width:1140px;margin:0 auto 30px}
+#content>#cont .sub_cont>div{margin:0 auto}
+
+/* aside있는 서브화면  */
+#content #aside+#cont{border-left:0px solid #dcdcdc}
+#content #aside+#cont .title{clear:both;width:868px;height:54px;margin:0 auto;padding:0;border-bottom:0px dashed #9e9e9e}
+#content #aside+#cont .title:after{content:"";display:block;clear:both}
+#content #aside+#cont .title h3{float:left;height:36px;line-height:1;margin-right:7px;vertical-align:bottom;border:0;font-weight:600;font-size:22px;color:#212121}
+#content #aside+#cont .sub_cont{width:868px !important;margin:0 0 30px}
+#content #aside+#cont .sub_cont>div{width:868px;}
+#content #aside+#cont .title.title02{clear:both;width:868px;height:41px;margin:0 auto;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/bg_h3.gif) repeat-x 0 100%}
+#content #aside+#cont .title.title02 h3{float:left;height:39px;border-bottom:2px solid #6bb2e5}
+
+/* Aside */
+#aside .snb_area h2{background:#0094da;width:100%;height:54px;line-height:54px;padding:0;text-align:center;color:#fff;font-size:22px;letter-spacing:-1px;font-weight:100}
+#aside .snb_area .snb{width:100%;padding:16px 0 30px;background:#f4f4f4}
+#aside .snb_area .snb li{margin:0;text-align:center}
+#aside .snb_area .snb li a{font-size:19px;margin-bottom:0;display:block;padding:18px 0;font-weight:100;letter-spacing:-1px}
+#aside .snb_area .snb li a:hover,#aside .snb_area .snb li a.on{color:#0095da}
+
+/* 콘텐츠 영역 로케이션 */
+#cont .location{float:right;margin:20px 0 25px;margin-right:0px;font-family:'돋움',Dotum}/*공통*/
+#cont .location_wrap{width:1140px;margin:0 auto}/*width:1140*/
+#cont .location_wrap .location{}
+#cont .location_wrap02{width:1140px;margin:0 auto}/*width:960*/
+#cont .location_wrap02 .location{}
+#cont .location_wrap03{float:right;width:1140px;margin:0 auto;position:absolute;}/*width:1140px*/
+#content #aside+#cont .location_wrap03{width:868px;margin:0 auto;position:absolute;}/*width:868*/
+#cont .location_wrap03 .location{margin:-38px 0 25px 0}
+#cont .location li{float:left;margin-right:6px;padding-left:10px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/nav_arrow.gif) no-repeat 0 2px;font-size:12px}
+#cont .location li img{vertical-align:top;padding:0px 0 0 0}
+#cont .location li:first-child{padding-left:0;background:none}
+#cont .location li:last-child{margin-right:0}
+#cont .location li:first-child img{padding-top:1px}
+#cont .location li strong{color:#238eda;font-weight:600}
+#cont .sub_cont{clear:both}
+
+/* 콘텐츠 영역 로케이션 */
+#cont .top_area{margin-bottom:30px;padding:0}
+#cont .top_area img{vertical-align:top}
+
+/* 게시판 목록 */
+table.board_list{width:868px;table-layout:fixed;border-top:2px solid #0094da;border-bottom:2px solid #aaaaaa}
+table.board_list thead th{height:36px;background:#f4f4f4;font-size:13px;font-weight:900;color:#1e1e1e}
+table.board_list tbody td{padding:13px 0 10px;color:#9399a9;font-size:13px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/tbl_dotline.gif) repeat-x 0 0}
+table.board_list tbody tr:first-child td{background:none}
+table.board_list tbody td.tit{text-align:left;}
+table.board_list tbody td.tit a{color:#333;display:inline-block;*display:inline;*zoom:1;max-width:400px;overflow:hidden;white-space:nowrap;line-height:1.5;vertical-align:top;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+table.board_list tbody td.tit a:hover{color:#529cff;text-decoration:underline}
+table.board_list tbody td.tit .file{padding:0 0 0 5px}
+table.board_list tbody td.nolist{color:#333;text-align:center}
+
+#notice_list table.board_list{border-bottom:none;}
+#notice_list table.board_list thead th{height:45px; font-size:14px; color:#666; font-weight:normal;}
+#notice_list table.board_list tbody td{background:none; border-bottom:1px solid #e0e0e0; font-size:14px; color:#666; line-height:1;}
+#notice_list table.board_list tbody td.state::after{width:50px; height:26px; border:1px solid #e0e0e0; font-size:13px; text-align:center; display:inline-block; box-sizing:border-box; line-height:26px; font-weight:600;}
+#notice_list table.board_list tbody td.dont::after{content:'대기'; color:#0094da; background:#fff;}
+#notice_list table.board_list tbody td.done::after{content:'완료'; color:#777; background:#eee;}
+
+/* 테이블 오버시 배경색 바뀜 */
+table.board_list tbody tr.on{background:#f5fafe}
+
+/* 상세보기 게시판 */
+table.board_view{width:868px;table-layout:fixed;border-top:3px solid #035b8f;border-bottom:1px solid #5b5f6b}
+table.board_view tbody th{padding:13px 0 10px 0 !important;font-size:13px;color:#1e1e1e;border-top:1px solid #d1d1d1}
+table.board_view tbody td{padding:13px 0 10px 0 !important;color:#9399a9;font-size:13px;border-top:1px solid #d1d1d1}
+table.board_view tbody tr:first-child th{border-top:0}
+table.board_view tbody tr:first-child td{border-top:0}
+table.board_view tbody td.tit{text-align:left;padding-left:0px;padding-right:20px;line-height:1.2;font-size:14px;color:#333;font-weight:900;background:#f4f4f4}
+table.board_view tbody td.tit>span{display:block;padding:0 20px 0 29px}
+table.board_view tbody th.period{text-align:left;padding-left:0px;color:#6b6b6b;background:#fafafa}
+table.board_view tbody th.issue{text-align:left;padding-left:0px;color:#6b6b6b;background:#fafafa}
+table.board_view tbody th.general{text-align:left;padding-left:0px;color:#6b6b6b;background:#fafafa}
+table.board_view tbody th.period>span{padding:0 11px 0 29px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/lounge/event_vline.gif) no-repeat 100% 2px }
+table.board_view tbody th.issue>span{padding:0 11px 0 0;background:url(../../../cdndata.milkt.co.kr/ele/www/images/lounge/event_vline.gif) no-repeat 100% 2px }
+table.board_view tbody th.general>span{padding:0 11px 0 29px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/lounge/event_vline.gif) no-repeat 100% 2px }
+table.board_view tbody td.period{text-align:left;background:#fafafa}
+table.board_view tbody td.issue{text-align:left;background:#fafafa}
+table.board_view tbody td.general{text-align:left;background:#fafafa}
+table.board_view tbody td.detail{background:#fff}
+table.board_view tbody td.detail iframe{margin:6px 7px 9px 8px;text-align:center;border:0}
+table.board_view tbody td.comment>div{text-align:left;padding:8px 29px;color:#6b6b6b;line-height:1.7;word-break:break-all;word-wrap:break-word}
+table.board_view tbody td.comment>div>img{max-width:810px;/*margin-left:-29px*/}
+table.board_view tbody td.comment>div .tpl_event{margin-left:-29px}
+table.board_view tbody tr.file th{height:26px;padding:14px 0 0px;text-align:right;font-size:12px;font-weight:900;color:#6b6b6b;background:#fcfcfc;vertical-align:top}
+table.board_view tbody tr.file th>span{display:block;padding:0 11px 0 0;background:url(../../../cdndata.milkt.co.kr/ele/www/images/lounge/event_vline.gif) no-repeat 100% 2px }
+table.board_view tbody tr.file td{text-align:left;padding:14px 0 5px 0px;font-size:11px;color:#6b6b6b;background:#fcfcfc;vertical-align:top}
+table.board_view tbody tr.file td a{display:block;font-size:11px;text-decoration:underline;color:#9399a9;margin:0 0 10px 11px}
+table.board_view tbody tr.file td a:hover{color:#529cff;text-decoration:underline}
+.board_view+.btns{text-align:right;padding:10px 0}
+.board_view+.btns a{display:inline-block;width:57px;height:29px;line-height:29px;text-align:center;font-size:13px;color:#fff;font-weight:900;background:#035b8f}
+
+.bottom_area .notice_title{width:100%; padding:27px 20px; box-sizing:border-box; overflow:hidden; border-bottom:1px solid #e0e0e0;}
+.bottom_area .notice_title>h1{width:520px; float:left; line-height:26px; font-size:20px; font-weight:600; color:#0094da; letter-spacing:-0.5px;}
+.bottom_area .notice_title>div.date{width:200px; float:left; line-height:26px; font-size:15px; color:#777;}
+.bottom_area .notice_title>p{width:108px; float:left; line-height:26px; font-size:14px; color:#777;}
+.bottom_area .notice_title>p>span{width:50px; height:26px; line-height:26px; font-size:13px; text-align:center; box-sizing:border-box; display:inline-block; float:right; border:1px solid #e0e0e0;}
+.bottom_area .notice_title>p>span.done{color:#777; background:#eee;}
+.bottom_area .notice_title>p>span.dont{color:#0094da; background:#fff;}
+.bottom_area .notice_q{width:868px; border-bottom:1px solid #e0e0e0; padding:38px 20px 57px; box-sizing:border-box; font-size:16px; line-height:22px; color:#333; letter-spacing:-0.5px;}
+.bottom_area .notice_a{width:868px; background:#f5f5f5; padding:15px 20px 0 50px; box-sizing:border-box; font-size:15px; line-height:24px; color:#777; letter-spacing:-0.5px;}
+.bottom_area .notice_a::before{content:'[답변]'; color:#333; display:block;}
+.bottom_area .notice_a_comment{background:#f5f5f5; padding:95px 20px 0 0; width:100%; text-align:right; font-size:14px; color:#999; letter-spacing:-0.5px; line-height:54px; box-sizing:border-box;}
+.bottom_area .notice_a img{max-width:768px;}
+.bottom_area .prevnext_listwrap{margin-top:0;}
+
+/* 상세보기 게시판 new 191120*/
+.cont_v2 table.board_view{border:none;}
+.cont_v2 .notice_detail01{border-top:2px solid #0094da;}
+
+/* 이전다음목록 게시판 */
+.prevnext_listwrap{margin:7px 0 0 0}
+table.prevnext_list{width:868px;table-layout:fixed;border-top:0;border-bottom:1px solid #d1d1d1}
+table.prevnext_list tbody th{padding:0 !important;text-align:left;height:33px;line-height:33px;padding:0 0 0 0;font-size:13px;font-weight:900;color:#6b6b6b;background:#fcfcfc;border-top:1px solid #dcdcdc;background:url(../../../cdndata.milkt.co.kr/ele/www/images/lounge/event_vline.gif) no-repeat 100% 50% #fcfcfc}
+table.prevnext_list tbody th>span{padding:0 0 0 15px;margin:0 0 0 29px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/ico_board_next.gif) no-repeat 0 7px}
+table.prevnext_list tbody tr:first-child th>span{background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/ico_board_prev.gif) no-repeat 0 50%}
+table.prevnext_list tbody td{padding:2px 0 0 0 !important;text-align:left;height:33px;color:#6b6b6b;font-size:12px;background:#fcfcfc;border-top:1px solid #dcdcdc;text-indent:10px}
+table.prevnext_list tbody td a{color:#6b6b6b;display:inline-block;*display:inline;*zoom:1;max-width:640px;padding:0;*padding:0 0 0 11px;margin:0;text-indent:0;overflow:hidden;white-space:nowrap;line-height:1.5;vertical-align:top;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+table.prevnext_list tbody td a:hover{color:#529cff;text-decoration:underline}
+
+#prevnext_listwrap .prevnext_listwrap{margin-top:0;}
+#prevnext_listwrap table.prevnext_list{border-top:1px solid #999; border-bottom:1px solid #999;}
+#prevnext_listwrap table.prevnext_list tbody th{background:none; border-top:none; text-align:center; font-size:14px; color:#666; line-height:normal;}
+#prevnext_listwrap table.prevnext_list tbody tr:first-child th{border-bottom:1px solid #e0e0e0;}
+#prevnext_listwrap table.prevnext_list tbody th>span{background:none; margin:0; padding:0;}
+#prevnext_listwrap table.prevnext_list tbody td{height:40px; background:none; border-top:none; font-size:14px; color:#999;}
+#prevnext_listwrap table.prevnext_list tbody td>a{color:#666;}
+#prevnext_listwrap table.prevnext_list tbody tr:first-child td{border-bottom:1px solid #e0e0e0;}
+
+
+/* 테이블_개인정보입력 */
+table.tbl_joininfo{width:868px;table-layout:fixed;border-top:1px solid #d7d7d7;border-left:1px solid #d7d7d7}
+table.tbl_joininfo tbody tr th{background:#ecf6ff;padding:8px 0 8px 30px;text-align:left;color:#597488;font-weight:900;border-bottom:1px solid #d7d7d7;border-right:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7}
+table.tbl_joininfo tbody tr td{background:#fff;padding:8px 0 8px 20px;text-align:left;border-bottom:1px solid #d7d7d7;border-right:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;line-height:20px}
+table.tbl_joininfo tbody tr td.stit{padding:8px 0;text-align:center}
+table.tbl_joininfo tbody tr td input[type=text],
+table.tbl_joininfo tbody tr td input[type=password]{width:177px;height:24px;line-height:23px;border:1px solid #d7d7d7;padding:0 5px;margin:0;vertical-align:middle}
+table.tbl_joininfo tbody tr td input.pnum{width:59px;color:#646464}
+table.tbl_joininfo tbody tr.recommend th{background:#fceee1}
+table.tbl_joininfo tbody tr.recommend td{background:#fceee1}
+table input.zipcode{width:143px !important;text-align:center}
+table.tbl tbody tr td input.zipcode{width:143px !important;text-align:center}
+table.tbl_joininfo tbody tr td p:first-child{padding:0 0 7px}
+table.tbl_joininfo tbody tr td span{vertical-align:middle;display:inline-block;padding:0 4px}
+table.tbl_joininfo tbody tr td span.noti{padding-left:10px;line-height:1.8}
+table.tbl_joininfo tbody tr td .gender{float:left;width:105px;margin:6px 0 0;height:10px;overflow:hidden}
+table.tbl_joininfo tbody tr td .birth{float:left;width:420px}
+table.tbl_joininfo tbody tr td .birth select{margin:0 5px 0 0}
+table.tbl_joininfo tbody tr td select{height:26px;vertical-align:top;border:1px solid #d7d7d7;padding:0 0 0 2px;vertical-align:middle}
+table.tbl_joininfo tbody tr td input[type=radio]{display:block;float:left;vertical-align:top;margin:0 5px 0 0;padding:0}
+table.tbl_joininfo tbody tr td label{display:block;float:left;height:14px;padding:0px 10px 0 0;vertical-align:top;line-height:16px}
+table.tbl_joininfo tbody tr td .input{float:left;top:0;right:0}
+table.tbl_joininfo tbody tr td .check{float:right;top:0;right:0;padding:5px 20px 0 0}
+table.tbl_joininfo tbody tr td .check>span{padding-left:0;color:#808080}
+table.tbl_joininfo tbody tr td .check02{clear:both;top:0;right:0;padding:10px 0 0 0}
+table.tbl_joininfo tbody tr td .check02>p{height:8px;float:left;margin:0 18px 0 0;color:#808080}
+table.tbl_joininfo tbody tr td .btn_check{display:inline-block;width:106px;height:24px;line-height:23px;margin:0 0 0 10px;font-size:13px;letter-spacing:-1px;text-align:center;background:#7b7b7b;border:1px solid #b9b9b9;color:#fff;vertical-align:top}
+table.tbl_joininfo tbody tr td .btn_gray{display:inline-block;height:18px;line-height:18px;padding:3px 6px;margin:0 0 0 10px;font-size:13px;letter-spacing:-1px;text-align:center;background:#f0f0f0;border:1px solid #919191;vertical-align:top}
+table.tbl_joininfo tbody tr td .btn_check02{display:inline-block;width:76px;height:24px;line-height:23px;margin:0 0 0 10px;font-size:13px;letter-spacing:-1px;text-align:center;background:#7b7b7b;border:1px solid #b9b9b9;color:#fff;vertical-align:top}
+table.tbl_joininfo tbody tr td .btn_msgsend{display:inline-block;width:98px;height:26px;line-height:24px;margin:0 0 0 5px;font-size:13px;letter-spacing:-1px;text-align:center;background:#cd4ea5;color:#fff;vertical-align:top}
+table.tbl_joininfo tbody tr td input.addr01{width:219px}
+table.tbl_joininfo tbody tr td input.addr02{width:369px}
+table.tbl tbody tr td input.addr01{width:209px !important}
+table.tbl tbody tr td input.addr02{width:309px !important}
+table.tbl_joininfo tbody tr td .recom{display:inline-block;padding:3px 0 0 0}
+table.tbl_joininfo tbody tr td .benefit{padding:8px 0 0 0}
+table.tbl_joininfo tbody tr td .benefit>span{color:#808080}
+table.tbl_joininfo tbody tr td .benefit>a{display:inline-block;padding:0 0 0 5px;margin:0 0 0 15px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bul_03.gif) no-repeat 0 50%;color:#31b4d0}
+table.tbl_joininfo tbody tr td .benefit>a span{text-decoration:underline}
+table.tbl_joininfo .txt_gray{padding:0 !important;margin:0 !important;color:#808080}
+table.tbl_joininfo .txt_gray02{padding:10px 0 0 0 !important;margin:0 !important;color:#808080}
+table.tbl_joininfo .url{height:24px !important;line-height:28px !important;text-decoration:underline;color:#0072bc;padding:0;}
+
+table.tbl_joininfo{width:868px}
+table.tbl_joininfo col.th01{width:170px;*width:140px;padding:8px 0 8px 30px}
+table.tbl_joininfo col.td01{width:88px;*width:68px;padding:8px 0 8px 20px}
+table.tbl_joininfo col.td02{width:606px;*width:586px;padding:8px 0 8px 20px}
+table.tbl_joininfo col.td03{width:695px;*width:675px;padding:8px 0 8px 20px}
+
+table.tbl_joininfo tbody tr td .chk_mms01{float:left;width:345px;margin:8px 0 0 5px}
+table.tbl_joininfo tbody tr td .chk_mms01>span{vertical-align:top;display:inline-block;zoom:1;*display:inline;height:18px;line-height:18px;padding:0 4px;margin:0 0 5px}
+table.tbl_joininfo .chk_mms01 input{float:left}
+table.tbl_joininfo .chk_mms01 input[type=checkbox]{margin-top:5px;*margin-top:6px}
+table.tbl_joininfo .chk_mms01 label{display:block;float:left;height:21px;padding:0px 10px 0 0;margin:4px 0 0;vertical-align:top;line-height:14px !important;font-size:12px}
+table.tbl_joininfo .chk_mms01 label em{font-weight:900;color:#2d7ed9}
+table.tbl_joininfo tbody tr td .chk_mms02>span{vertical-align:top;display:inline-block;zoom:1;*display:inline;height:18px;line-height:18px;padding:0;margin:5px 0 0 -3px}
+table.tbl_joininfo .chk_mms02 input{float:left}
+table.tbl_joininfo .chk_mms02 label{display:block;float:left;height:21px;padding:0px 10px 0 0;margin:4px 0 0;vertical-align:top;line-height:12px !important;font-size:12px}
+table.tbl_joininfo .chk_mms02 label em{font-weight:900;color:#2d7ed9}
+table.tbl_joininfo tbody tr td .chk_agree>span{vertical-align:top;display:inline-block;zoom:1;*display:inline;height:18px;padding:0;margin:4px 0 3px 4px;font-size:13px;color:#646464}
+table.tbl_joininfo tbody tr td .chk_agree>span:first-child{margin-right:10px}
+table.tbl_joininfo .chk_agree input{float:left}
+table.tbl_joininfo .chk_agree label{display:block;float:left;height:21px;padding:0px 0px 0 0;margin:3px 5px 0 5px;vertical-align:top;line-height:12px !important;font-size:13px}
+table.tbl_joininfo .chk_agree label em{font-weight:900;color:#2d7ed9}
+table.tbl_joininfo .chk_agree .chk_all{margin-left:0}
+table.tbl_joininfo .chk_agree .chk_area{float:right}
+
+/* 테이블_레이어팝업 */
+table.tbl_lpop{table-layout:fixed}
+table.tbl_lpop thead tr th{height:41px;border-right:1px solid #d7d7d7;border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;background:#ecf6ff;color:#597488;font-size:12px;font-weight:900;text-align:center}
+table.tbl_lpop tbody tr td{height:41px;border-right:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;background:#fff;font-size:12px;text-align:center}
+table.tbl_lpop thead tr th:first-child{border-left:1px solid #d7d7d7}
+table.tbl_lpop tbody tr td:first-child{border-left:1px solid #d7d7d7}
+table.tbl_lpop tbody tr td.a_left{text-align:left;padding-left:15px}
+table.tbl_lpop tbody tr td a.btn{display:inline-block;height:24px;line-height:25px;font-size:13px;padding:0 7px;background:#f0f0f0;border:1px solid #919191;color:#333;text-align:center}
+table.tbl_lpop tbody tr td em{color:#ff6c00;font-size:14px;text-decoration:underline;font-weight:900}
+
+/* 게시판 페이지 네비게이션  */
+.page_nav{width:868px;height:30px;text-align:center;margin:30px 0 0 0;font-size:13px}
+.page_nav a{display:inline-block;*display:inline;*zoom:1;vertical-align:top;min-width:14px;height:30px;line-height:30px;padding:0 8px;margin:0 5px;color:#666666;font-size:12px;font-weight:900;}
+.page_nav a:link{color:#1f1f1f}
+.page_nav a:hover{color:#fff}
+.page_nav strong{font-weight:900;color:#fff;font-size:13px}
+.page_nav a.on{background:#0094da/*#035b8f*/;font-weight:900;color:#fff;font-size:12px}
+.page_nav a:hover{background:#0094da/*#035b8f*/;color:#fff;font-size:12px;text-decoration:none}
+.page_nav .dir{padding:0;margin:0 5px}
+.page_nav img{vertical-align:top}
+
+/* 게시판 검색바 */
+.board_schbar img{vertical-align:top}
+.board_schbar{width:100%;height:36px;margin:38px 0 0 0;padding-top:13px;background:#f4f4f4;text-align:center}
+.board_schbar input[type=text]{display:inline-block;width:235px;height:21px;line-height:21px;padding:1px;border:1px solid #c6c6c6;vertical-align:top;*margin:-1px 0 0 0}
+.board_schbar select{width:80px;padding:3px}
+.board_schbar .sel_wrap{}
+.board_schbar input[type=image], .board_schbar a{display:inline-block;vertical-align:top;margin-top:-1px}
+#cont.cont_v2 .board_schbar{margin-top:0; margin-bottom:30px; height:70px; background:#f5f5f5; padding:20px 0; box-sizing:border-box;}
+#cont.cont_v2 .board_schbar input[type=text]{width:260px; height:31px; box-sizing:border-box; margin-right:2px;}
+#cont.cont_v2 .board_schbar input:focus::-webkit-input-placeholder {color:transparent; }
+#cont.cont_v2 .board_schbar>a{width:115px; height:31px; background:#0094da; color:#fff; text-align:center; line-height:31px; border-radius:4px; font-size:15px;}
+
+/* 셀렉트버튼 1 */
+.selectDesign{display:inline-block; position:relative; max-width:100%; border:1px solid #b0b0b0; background:#fff;border-radius:0px; *display:inline; *zoom:1; box-sizing:border-box;}
+.selectDesign select{visibility:hidden; position:absolute; z-index:-1}
+.selectDesign .now{height:23px; padding:0 40px 0 10px; line-height:23px; cursor:pointer;overflow:hidden}
+.selectDesign button{position:absolute; right:0px; top:0px; overflow:hidden; width:24px; height:23px; padding:0; border:0; text-indent:-999px; cursor:pointer; background:none; background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/select_v2.gif) no-repeat 0 1px}
+.selectDesign.show{z-index:10}
+.selectDesign.show button{z-index:10; background-position:0px 1px}
+.selectDesign .list{display:none; position:absolute; left:-1px; top:100%; width:100%; border:1px solid #b0b0b0; background:#fff}
+.selectDesign .list li{cursor:pointer}
+.selectDesign .list li a{display:block; padding:5px 5px 2px; color:#666; text-decoration:none}
+.selectDesign .list li a.focus,
+.selectDesign .list li a:hover{color:#fff; background-color:#8aa8bd}
+#cont.cont_v2 .selectDesign{border:none; margin-right:2px;}
+#cont.cont_v2 .selectDesign .now{width:150px; height:31px; line-height:31px; padding:0; padding-left:10px; box-sizing:border-box; text-align:left; border:1px solid #b0b0b0;}
+#cont.cont_v2 .selectDesign button{height:31px; background-position:0 center; margin-right:1px;}
+
+/* 사이트맵 */
+#content>#cont.footmap .location_wrap02{}/*width:1056*/
+#content>#cont.footmap .location_wrap02 .location{}
+#content>#cont.footmap .title{border-bottom:0;width:1140px}
+#content>#cont.footmap .title h3{float:left;height:36px;line-height:36px;margin:0 0 0 8px;vertical-align:bottom;border:0;font-weight:600;font-size:32px;color:#4e4e4e}
+.sitemap{width:1140px}
+.sitemap>div{margin:20px 0 63px;clear:both;min-height:236px}
+.sitemap .map_group{}
+.sitemap .map_group:after{content:"";display:block;clear:both}
+.sitemap .map_group li{float:left;width:191px;margin:0 34px 0 0}
+.sitemap .map_group li.last{margin:0 0 0 0}
+.sitemap .map_group li h4{width:189px;height:39px;border:1px solid #cfe7f9;background:#99cdf2;text-align:center;vertical-align:middle}
+.sitemap .map_group li ul li{height:38px;line-height:38px;border-bottom:1px solid #dadada}
+.sitemap .map_group li ul li a{background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/bul_sky.gif) no-repeat 14px 18px;width:191px;display:inline-block;padding:0 0 0 23px;font-size:13px}
+.sitemap .map_group li h4 img{margin:10px 0 0}
+.sitemap .map_group li ul li a:hover,
+.sitemap .map_group li ul li a:active{font-weight:900;color:#4b9bd4}
+.footmap .sitemap{width:1140px}
+.footmap .sitemap>div{margin:20px 0 60px;clear:both;min-height:236px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/bg_sitemap.gif) repeat-x 0 0}
+.footmap .sitemap .map_group{}
+.footmap .sitemap .map_group:after{content:"";display:block;clear:both}
+/*.footmap .sitemap .map_group li{float:left;width:228px;margin:0}
+.footmap .sitemap .map_group li.last{margin:0 0 0 0}
+.footmap .sitemap .map_group li h4{width:200px;padding:0 0 0 40px;margin:0 0 15px 0;height:60px;line-height:60px;font-size:18px;color:#424242;background:none;border:0;font-weight:600;text-align:left;vertical-align:middle}
+.footmap .sitemap .map_group li ul li{height:30px;line-height:30px;padding:0 0 0 40px;border-bottom:0;margin:0}
+.footmap .sitemap .map_group li ul li a{width:200px;display:inline-block;font-size:14px;color:#454545;background:none;padding:0}
+*/
+.footmap .sitemap .map_group li{float:left;width:190px;margin:0}
+.footmap .sitemap .map_group li.last{margin:0 0 0 0}
+.footmap .sitemap .map_group li h4{width:160px;padding:0 0 0 30px;margin:0 0 15px 0;height:60px;line-height:60px;font-size:18px;color:#424242;background:none;border:0;font-weight:600;text-align:left;vertical-align:middle}
+.footmap .sitemap .map_group li ul li{height:30px;line-height:30px;padding:0 0 0 30px;border-bottom:0;margin:0}
+.footmap .sitemap .map_group li ul li a{width:160px;display:inline-block;font-size:14px;color:#454545;background:none;padding:0}
+.footmap .sitemap .map_group li h4 img{margin:10px 0 0}
+.footmap .sitemap .map_group li ul li a:hover span,
+.footmap .sitemap .map_group li ul li a:active span{font-weight:900;color:#282828;border-bottom:1px solid #282828}
+
+/* 템플릿 팝업 300x375 */
+.pop_tpl_01{position:relative;width:350px;height:375px}
+.pop_tpl_01 .pop_content{width:100%;height:350px}
+.pop_tpl_01 .invisible{visibility:hidden;font-size:0;line-height:0;overflow:hidden}
+.pop_tpl_01 .pop_content h1,
+.pop_tpl_01 .pop_content h2,
+.pop_tpl_01 .pop_content h3,
+.pop_tpl_01 .pop_content p,
+.pop_tpl_01 .pop_content ul,
+.pop_tpl_01 .pop_content ol,
+.pop_tpl_01 .pop_content em,
+.pop_tpl_01 .pop_content dl{visibility:hidden;font-size:0;line-height:0;overflow:hidden}
+.pop_tpl_01 .pop_content em{display:block}
+.pop_tpl_01 .confirm_request{position:absolute;top:225px;left:15px}
+.pop_tpl_01 .confirm_request input[type=text]{vertical-align:top;width:60px;height:18px;border:1px solid #ddd}
+.pop_tpl_01 .confirm_request input[type=text] + span{display:inline-block;vertical-align:top;margin:5px 4px 0}
+.pop_tpl_01 .confirm_request select{margin:8px 0 0;height:20px}
+.pop_tpl_01 .pop_content .btn_confirm{position:absolute;top:262px;left:64px;display:block}
+.pop_tpl_01 .pop_content .btn_confirm span{visibility:hidden;font-size:0;line-height:0;overflow:hidden}
+.pop_tpl_01 .pop_btm{width:100%;vertical-align:middle;height:30px;background:#f3f3f3;text-align:right;font-size:12px;color:#333}
+.pop_tpl_01 .pop_btm>div{float:right;padding:6px 15px 0 0;}
+.pop_tpl_01 .pop_btm a img {margin:0}
+.pop_tpl_01 .pop_btm input{float:left;vertical-align:middle}
+.pop_tpl_01 .pop_btm select{vertical-align:middle;float:left;height:20px;margin:0 4px 0 2px;font-size:12px;border:1px solid #999;color:#515151}
+.pop_tpl_01 .pop_btm label span{float:left;display:block;padding:4px 5px 0 0;color:#515151;font-size:12px}
+.pop_tpl_01 .pop_btm .btn_close{float:left;text-align:center;display:inline-block;width:46px;height:20px;line-height:20px;vertical-align:top;margin:-2px 0 0 0;padding:0;color:#333;font-weight:900;font-size:13px;background:#fff;border:1px solid #b9b9b9}
+.pop_tpl_01 .pop_content02{height:350px;margin:0 25px}
+.pop_tpl_01 .pop_content02 .terms{border:1px solid #dbdbdb;padding:20px 20px 15px;width:488px}
+.pop_tpl_01 .pop_content02 ul li{font-size:14px;color:#040404;font-weight:600;margin-bottom:15px}
+.pop_tpl_01 .pop_content02 ul li>ul li{background:url(../../../cdndata.milkt.co.kr/ele/www/images/popup/180130/ico_dot.gif) left 7px no-repeat;padding-left:10px;margin:7px 0 0;font-size:13px;line-height:18px;color:#040404;font-weight:100}
+.pop_tpl_01 .pop_content02 ul li>ul li span{display:block;font-size:12px;color:#727171}
+.pop_tpl_01 .txt_thankyou{text-align:center;font-size:16px;color:#040404;font-weight:600;margin:25px 0;}
+.pop_tpl_01 .pop_btm02{width:100%;vertical-align:middle;height:30px;background:#f3f3f3;text-align:left;font-size:12px;color:#333}
+.pop_tpl_01 .pop_btm02>div{float:left;padding:6px 15px 0;width:94%}
+.pop_tpl_01 .pop_btm02 a img {margin:0}
+.pop_tpl_01 .pop_btm02 input{float:left;vertical-align:middle}
+.pop_tpl_01 .pop_btm02 select{vertical-align:middle;float:left;height:20px;margin:0 4px 0 2px;font-size:12px;border:1px solid #999;color:#515151}
+.pop_tpl_01 .pop_btm02 label span{float:left;display:block;padding:4px 5px 0 0;color:#515151;font-size:12px}
+.pop_tpl_01 .pop_btm02 .btn_close{float:right;text-align:center;display:inline-block;width:46px;height:20px;line-height:20px;vertical-align:top;margin:-2px 0 0 0;padding:0;color:#333;font-weight:900;font-size:13px;background:#fff;border:1px solid #b9b9b9}
+
+/* [팝업]교사채용설명회 일정  */
+.pop_teacher02{width:800px;overflow-x:hidden}
+.pop_teacher02 .pop_tbl{width:800px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/popup/170522/bg_table.jpg) repeat-y 0 0}
+.pop_teacher02 .pop_tbl .tbl_date{width:660px;margin:0 auto;table-layout:fixed;border-top:1px solid #41596e;border-bottom:1px solid #41596e}
+.pop_teacher02 .pop_tbl .tbl_date .date{width:104px}
+.pop_teacher02 .pop_tbl .tbl_date .laca{width:78px}
+.pop_teacher02 .pop_tbl .tbl_date .time{width:107px}
+.pop_teacher02 .pop_tbl .tbl_date .place{width:366px}
+.pop_teacher02 .pop_tbl .tbl_date tr th{padding:11px 0 12px;color:#f24f60;font-size:15px;border-left:1px solid #b1b1b1;text-align:center}
+.pop_teacher02 .pop_tbl .tbl_date tr th:first-child{border-left:1px solid #41596e}
+.pop_teacher02 .pop_tbl .tbl_date tr th.place{border-right:1px solid #41596e}
+.pop_teacher02 .pop_tbl .tbl_date tr td{padding:13px 0;color:#000;font-size:14px;letter-spacing:-1px;border-top:1px solid #d6d6d6;border-left:1px solid #b1b1b1;text-align:center}
+.pop_teacher02 .pop_tbl .tbl_date tr td:first-child{border-left:1px solid #41596e}
+.pop_teacher02 .pop_tbl .tbl_date tr td.place{border-right:1px solid #41596e}
+.pop_teacher02 .pop_top{width:800px}
+.pop_teacher02 .pop_bottm{width:800px}
+
+.pop_teacher03{width:700px;overflow-x:hidden}
+.pop_teacher03 .pop_top{background:url(../../../cdndata.milkt.co.kr/ele/www/images/popup/recruit_pop/bg_recruit.jpg) left top no-repeat;width:700px;height:712px;}
+.pop_teacher03 .pop_top h1{font-size:44px;font-family:'Noto Sans KR';font-weight:800;color:#111;padding-top:30px;text-align:center;line-height:50px}
+.pop_teacher03 .pop_top h2{font-size:18px;font-family:'Noto Sans KR';font-weight:600;color:#000;padding-top:15px;text-align:center;line-height:25px}
+.pop_teacher03 .pop_top h1 span,.pop_teacher03 .pop_top h2 span,.pop_teacher03 .pop_top h3 span{color:#e219d3;}
+.pop_teacher03 .pop_top h3{background:url(../../../cdndata.milkt.co.kr/ele/www/images/popup/recruit_pop/bg_title.jpg) left top no-repeat;height:88px;margin:45px 0 0 57px;padding:16px 0 0 160px;font-size:21px;font-family:'Noto Sans KR';font-weight:800;color:#000;text-align:left;line-height:30px}
+.pop_teacher03 .pop_top .apply_step{margin:45px 62px 0 57px;}
+.pop_teacher03 .pop_top .apply_step dl dt{background:url(../../../cdndata.milkt.co.kr/ele/www/images/popup/recruit_pop/bg_balloon.jpg) left top no-repeat;width:124px;height:50px;font-size:18px;font-family:'Noto Sans KR';font-weight:800;color:#e219d3;text-align:center;line-height:50px;float:left;}
+.pop_teacher03 .pop_top .apply_step dl dt.big{background:url(../../../cdndata.milkt.co.kr/ele/www/images/popup/recruit_pop/bg_balloon.jpg) left -70px no-repeat;width:124px;height:103px;font-size:18px;font-family:'Noto Sans KR';font-weight:800;color:#e219d3;text-align:center;line-height:22px;float:left;padding-top:10px}
+.pop_teacher03 .pop_top .apply_step dl dd{margin-left:20px;width:436px;float:left;font-size:20px;font-family:'Noto Sans KR';font-weight:600;color:#000;line-height:27px}
+.pop_teacher03 .pop_top .apply_step dl dd .txt_small{font-size:16px;color:#000;font-weight:400}
+.pop_teacher03 .pop_top .apply_step dl dd span{color:#e219d3;}
+.pop_teacher03 .pop_top .apply_step dl p{font-size:16px;font-family:'Noto Sans KR';font-weight:400;color:#000;padding:36px 0 0 146px}
+.pop_teacher03 .pop_top .apply_step dl table {margin-left:146px;width:425px}
+.pop_teacher03 .pop_top .apply_step dl table th{width:65px;height:24px;font-size:16px;font-family:'Noto Sans KR';font-weight:400;color:#000;text-align:left}
+.pop_teacher03 .pop_top .apply_step dl table td{width:125px;height:24px;font-size:16px;font-family:'Noto Sans KR';font-weight:400;color:#000;letter-spacing:-1px;text-align:left}
+.pop_teacher03 .pop_top .apply_step dl:after{content:'';display:block;clear:both;margin-bottom:55px}
+.pop_teacher03 .pop_tbl{width:700px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/popup/recruit_pop/bg_table.jpg) repeat-y 0 0}
+.pop_teacher03 .pop_tbl .tbl_date{width:576px;margin:0 auto;table-layout:fixed;border-top:1px solid #41596e;border-bottom:1px solid #41596e}
+.pop_teacher03 .pop_tbl .tbl_date .date{width:104px}
+.pop_teacher03 .pop_tbl .tbl_date .laca{width:78px}
+.pop_teacher03 .pop_tbl .tbl_date .time{width:107px}
+.pop_teacher03 .pop_tbl .tbl_date .place{width:282px}
+.pop_teacher03 .pop_tbl .tbl_date tr th{padding:11px 0 12px;color:#e219d3;font-family:'Noto Sans KR';font-weight:600;font-size:14px;border-left:1px solid #b1b1b1;text-align:center}
+.pop_teacher03 .pop_tbl .tbl_date tr th:first-child{border-left:1px solid #41596e}
+.pop_teacher03 .pop_tbl .tbl_date tr th.place{border-right:1px solid #41596e}
+.pop_teacher03 .pop_tbl .tbl_date tr td{padding:13px 0;color:#000;font-size:14px;letter-spacing:-1px;border-top:1px solid #d6d6d6;border-left:1px solid #b1b1b1;text-align:center}
+.pop_teacher03 .pop_tbl .tbl_date tr td:first-child{border-left:1px solid #41596e}
+.pop_teacher03 .pop_tbl .tbl_date tr td.place{border-right:1px solid #41596e}
+.pop_teacher03 .pop_bottm{width:800px}
+
+/* 에러페이지 */
+.error_page02{position:relative;background:url(../../../cdndata.milkt.co.kr/ele/www/images/main/error_bg2.jpg) no-repeat 0 0;width:713px;height:475px;position:absolute;top:50%;left:50%;margin:-232px 0 0 -356px}
+.error_page02 p{text-align:center;margin:141px 0 0 0}
+.error_page02 ul{position:absolute;top:265px;left:251px}
+.error_page02 ul li{font-size:14px;font-family:'돋움',Dotum;line-height:1.2;padding:0 0 10px 7px;color:#484848;background:url(../../../cdndata.milkt.co.kr/ele/www/images/main/bul_rect.html) no-repeat 0 5px}
+
+.error_page03{position:absolute;background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/img_error_v2.png) no-repeat 0 0;width:1140px;height:800px;position:absolute;top:50%;left:50%;margin:-450px 0 0 -570px}
+.error_page03 p{text-align:center;margin:141px 0 0 0}
+.error_page03 ul{position:absolute;bottom:40px;left:271px}
+.error_page03 ul li{font-size:14px;font-family:'돋움',Dotum;line-height:1.2;padding:0 0 10px 7px;color:#484848}
+.error_page03 ul li a{margin:0 10px}
+
+.error_503{position:absolute;background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/bg_delay.jpg) no-repeat 0 0;width:1140px;height:610px;position:absolute;top:50%;left:50%;margin:-300px 0 0 -570px}
+.error_503 p{text-align:center;margin:141px 0 0 0}
+
+/* 서비스점검 */
+.service_chk{position:absolute;background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/bg_serviceChk_v2.png) no-repeat 0 -10px;width:1140px;height:690px;position:absolute;top:50%;left:50%;margin:-370px 0 0 -570px}
+.service_chk .txt_area{margin:156px 0 0 110px;width:800px}
+.service_chk .txt_area h2.tit{font-size:30px;font-weight:bold;color:#1f1f1f;margin-bottom:30px}
+.service_chk .txt_area>p{text-align:left;font-size:19px;line-height:26px;font-weight:600;color:#1f1f1f;margin-bottom:30px}
+.service_chk .txt_area>p em{color:#0095da;font-weight:bold}
+.service_chk .txt_area>dl{text-align:left;font-size:19px;line-height:26px;font-weight:600;color:#1f1f1f;margin-bottom:10px;color:#0095da;font-weight:bold}
+.service_chk .txt_area>dl dt,.service_chk .txt_area>dl dd{display:inline}
+.service_chk .txt_area>dl+p{margin-top:30px}
+
+/* 템플릿 플로팅배너 */
+.lpop_wrap{position:absolute;z-index:200;margin-top:158px}
+.lpop_wrap .lpop_tpl{position:relative;width:479px;padding-top:0px}
+.lpop_wrap .lpop_tpl>img{position:absolute;top:0;left:0}
+.lpop_wrap .lpop_tpl a.layer_close{position:absolute;top:12px;right:13px}
+.lpop_wrap .lpop_tpl .lpopcon{height:376px}
+.lpop_wrap .lpop_tpl .lpopcon p{position:absolute;visibility:hidden;font-size:0;line-height:0;overflow:hidden}
+.lpop_wrap .lpop_tpl .lpopcon .btnarea{position:absolute;top:276px;left:0}
+.lpop_wrap .lpop_tpl .lpopcon .btnarea span{position:absolute;top:0;left:0;visibility:hidden;font-size:0;line-height:0}
+.lpop_wrap .lpop_tpl .lpop_bottom{height:23px;padding-right:7px;margin-top:0px;text-align:right;color:#484848;background:#dcdcdc}
+.lpop_wrap .lpop_tpl .lpop_bottom input[type=checkbox]{position:relative;top:2px;width:13px;height:13px;vertical-align:top}
+.lpop_wrap .lpop_tpl .lpop_bottom label, .lpop_wrap .lpop_tpl .lpop_bottom a{position:relative;top:5px}
+.lpop_wrap .lpop_tpl .lpop_bottom a img{display:inline-block;margin:-2px 5px 0}
+
+/* 학원설립운영등록증 팝업 */
+.btn_popClose{text-align:center;padding-bottom:10px}
+
+/* 마케팅 정보 수신 동의 확인 안내 */
+.pop_ag161125 .pop_ag_header {width:100%; height:65px; margin-bottom:20px; text-align:center; border-bottom:1px solid #ececec;}
+.pop_ag161125 .pop_ag_header img {width:auto; height:65px;}
+.pop_ag161125 .pop_ag_content {padding:0 20px;}
+.pop_ag161125 .pop_ag_content .greeting {font-weight:900; color:#333; font-size:14px;}
+.pop_ag161125 .pop_ag_content p {padding-bottom:16px;}
+.pop_ag161125 .pop_ag_content p strong {font-weight:900; color:#434343;}
+.pop_ag161125 .pop_ag_content p span {font-weight:900; color:#349d95;}
+.pop_ag161125 .pop_ag_content table {width:100%; color:#63738c; border-top:2px solid #abb5c6; border-bottom:1px solid #c2c8d3;}
+.pop_ag161125 .pop_ag_content table th {padding:10px; border-right:1px solid #e0e4ec; background:#f8f8f8;}
+.pop_ag161125 .pop_ag_content table td {padding:10px; font-size:11px; border-top:1px solid #e0e4ec;text-align:left}
+.pop_ag161125 .pop_ag_content table p {padding:0 0 6px 8px; text-indent:-8px;}
+.pop_ag161125 .pop_ag_content table p img {width:4px; height:auto; position:relative; top:-2px;}
+.pop_ag161125 .pop_ag_content table ul li {padding-bottom:2px; font-weight:900; position:relative;}
+.pop_ag161125 .pop_ag_content table ul li span {position:absolute; right:0; top:0;}
+.pop_ag161125 .pop_ag_content .pop_ag_info {padding:10px 15px 3px 15px; margin-top:20px; font-size:11px; border-radius:5px; background:#f8f8f8;}
+.pop_ag161125 .pop_ag_content .pop_ag_info li {padding:0 0 7px 10px; text-indent:-10px;}
+.pop_ag161125 .pop_ag_content .pop_ag_info li img {width:12px; height:auto;}
+.pop_ag161125 .pop_ag_content .pop_ag_btns {padding:20px 0; text-align:center;}
+.pop_ag161125 .pop_ag_content .pop_ag_btns img {width:auto; height:30px;}
+
+/* 상단 검색영역 */
+.topSrch_area{position:absolute;right:0px;top:40px}
+.topSrch_area .topSrch {border:2px solid #47abde;float:left;margin-right:4px;width:300px}
+.topSrch_area .topSrch .selectDesign{display:inline-block;position:relative;width:150px;border:0;background:#fff;border-radius:0;*display:inline;*zoom:1;vertical-align:middle}
+.topSrch_area .topSrch .selectDesign select{visibility:hidden;position:absolute;z-index:-1}
+.topSrch_area .topSrch .selectDesign .now{height:29px;padding:0 40px 0 10px;line-height:29px;cursor:pointer}
+.topSrch_area .topSrch .selectDesign button{position:absolute;right:0;top:0;overflow:hidden;width:24px;height:29px;padding:0;border:0;text-indent:-999px;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/select03.gif) no-repeat 0 5px}
+.topSrch_area .topSrch .selectDesign.show{z-index:10}
+.topSrch_area .topSrch .selectDesign.show button{z-index:10;background-position:0 5px}
+.topSrch_area .topSrch .selectDesign .list{display:none;position:absolute;left:-1px;top:100%;width:100%;border:1px solid #b0b0b0;background:#fff;max-height:300px;overflow-y:auto}
+.topSrch_area .topSrch .selectDesign .list li{cursor:pointer}
+.topSrch_area .topSrch .selectDesign .list li a{display:block;padding:5px 10px 2px;color:#666;text-decoration:none}
+.topSrch_area .topSrch .selectDesign .list li a.focus,
+.topSrch_area .topSrch .selectDesign .list li a:hover{color:#fff;background-color:#8aa8bd}
+.topSrch_area .topSrch input[type=text]{width:130px;height:14px;padding:5px 0;vertical-align:middle;border:0;display:inline-block}
+.topSrch_area .topSrch input:focus,.topSrch_area button:focus{outline:none;border:none}
+.topSrch_area button.btn_srch{background:#47abde;color:#fff;font-family:'돋움',dotum,sans-serif;font-size:12px;float:left;margin-top:0px;padding:10px 8px 9px;*padding:9px 3px 7px;border:0;cursor:pointer;z-index:99}
+
+/* 우리아이 교육정보 팝업 */
+.info #con{margin:0 10px}
+
+/* 170927 HME 학력평가 배너 */
+.lpop_hmeBanner{position:relative;background:#ccc;width:100%;height:200px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/event/170927/bg_event.jpg) #f5f5f5 center top no-repeat}
+.lpop_hmeBanner .cont{position:relative;width:960px;margin:0 auto}
+.lpop_hmeBanner p.txt_hmeGo{position:absolute;top:101px;left:279px}
+.lpop_hmeBanner .btn_close{background:url(../../../cdndata.milkt.co.kr/ele/www/images/event/170927/btn_close.gif) left top no-repeat;width:14px;height:14px;text-indent:-9999em;display:block;font-size:0;position:absolute;top:20px;right:10px;cursor:pointer}
+
+/* 171017  약관변경 공지팝업 */
+.pop_tpl_01 .pop_content02{}
+.pop_tpl_01 .pop_content02 .tit_terms{text-align:center;font-size:14px;margin-bottom:20px;color:#222}
+.pop_tpl_01 .pop_content02 .pop_cont{padding:20px}
+.pop_tpl_01 .pop_content02 .pop_cont p{font-size:12px;line-height:16px;margin-bottom:10px;color:#444}
+.pop_tpl_01 .pop_content02 .pop_cont p.info{font-size:14px;color:#222;font-weight:bold}
+.pop_tpl_01 .pop_content02 .pop_cont p span.txt_color{color:#0185f4;}
+.pop_tpl_01 .pop_content02 .pop_cont ul li{font-size:12px;line-height:16px;margin-bottom:10px;color:#444;font-weight:bold}
+.pop_tpl_01 .pop_content02 .pop_cont ul li span{font-weight:normal;display:block}
+.pop_tpl_01 table.terms {width:100%; color:#63738c; border-top:2px solid #abb5c6; border-bottom:1px solid #c2c8d3;margin:10px 0 15px}
+.pop_tpl_01 .pop_content02 .pop_cont ul li span.tbl_tit{font-size:12px;color:#444;display:block;padding-top:10px}
+.pop_tpl_01 table.terms th {padding:10px; border-left:1px solid #e0e4ec; background:#f8f8f8;}
+.pop_tpl_01 table.terms th:first-child,.pop_tpl_01 table.terms td:first-child{border-left:0}
+.pop_tpl_01 table.terms td {padding:10px; font-size:11px; border-top:1px solid #e0e4ec;border-left:1px solid #e0e4ec; text-align:center}
+.pop_tpl_01 table.terms td.old{background:#f4f4f4}
+
+/* 180329 약관변경 공지팝업 */
+.pop_tpl_01 .pop_content02 h3.tit{font-size:32px;color:#0096ec;font-weight:bold;line-height:30px;margin:25px 0 30px;text-align:center}
+.pop_tpl_01 .pop_content02 p.txt_noti{font-size:15px;color:#000;font-weight:600;line-height:20px;margin-bottom:30px}
+.pop_tpl_01 .pop_content02 p.txt_noti02{font-size:15px;color:#000;font-weight:600;line-height:20px;margin-top:30px;text-align:left}
+.pop_tpl_01 .pop_content02 p.txt_noti02 span{color:#0185f4;font-weight:bold}
+.pop_tpl_01 .pop_content02 ul.new li{background:url(../../../cdndata.milkt.co.kr/ele/www/images/popup/180330/ico_dot.gif) left 6px no-repeat;padding-left:15px;margin:7px 0 0;font-size:15px;line-height:20px;color:#000;font-weight:400;margin-bottom:15px}
+.pop_tpl_01 .pop_content02 ul.new li span{color:#000;font-weight:bold;display:inline-block;width:140px}
+.pop_tpl_01 .pop_content02 ul.new li a{color:#0096ec;font-weight:bold;text-decoration:underline}
+
+/* 무료체험 개인정보수집동의 */
+.chk_area{position:relative;}
+.chk_area .privacyInfo_area{position:relative;text-align:left}
+.chk_area .privacyInfo_area h3{font-size:14px;color:#646464;font-family:'Noto Sans KR',sans-serif;font-weight:600;line-height:1.2}
+.chk_area .privacyInfo_area .privacy_terms{border:1px solid #ddd; padding:20px;height:50px;overflow:hidden;overflow-y:scroll;margin-top:10px;background:#fff}
+.chk_area .privacyInfo_area .terms_view{margin:10px 0 20px;vertical-align:middle;font-size:14px;line-height:1.2}
+.chk_area .privacyInfo_area .terms_view span{display:inline-block;vertical-align:middle;*vertical-align:top;color:#1f1f1f;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:600}
+.chk_area .privacyInfo_area .terms_view a{display:inline-block;vertical-align:middle;text-decoration:underline;color:#8c8c8c;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:600;margin:0 0 0 5px}
+.chk_area .privacyInfo_area .promise_detail{border:0;overflow-x:hidden;color:#757575;font-size:12px;line-height:16px;word-wrap:break-word;white-space:pre-line;*white-space:pre}
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy{width:100%;border-top:none;border-bottom:1px solid #e5e5e5}
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy th{height:28px;padding:0;background-color:#f5f5f5;border-top:1px solid #e5e5e5;border-right:1px solid #e5e5e5;color:#646464}
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy td{padding:7px !important;text-align:center;border-right:1px solid #e5e5e5;border-top:1px solid #e5e5e5}
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy td.alg_lieft{text-align:left}
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy td{word-break:keep-all}
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy tr:first-child th,
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy tr:first-child td{border-top:1px solid #e5e5e5}
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy tr th:first-child,
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy tr td:first-child{border-left:1px solid #e5e5e5}
+.chk_area .privacyInfo_area .promise_detail table.tbl_policy tr td .redtxt{vertical-align:top;color:#c43636;font-weight:bold}
+.chk_area .privacyInfo_area .userinfo_chk02{border-top:0;padding:0;margin:0;position:absolute;bottom:-3px;right:0}
+.chk_area .privacyInfo_area .userinfo_chk02>span{position:relative;margin:10px 0 0 20px;*margin:10px 0 0 0px;display:inline-block}
+.chk_area .privacyInfo_area .userinfo_chk02 input[type=radio]{position:absolute;top:1px;left:1px;z-index:0;margin:5px 0 0;width:0;height:0}
+.chk_area .privacyInfo_area .userinfo_chk02 label{position:relative;border-right:0;z-index:2;display:inline-block;width:auto;*width:95px;height:20px;line-height:22px;*line-height:24px;padding:0 0 0 28px;font-size:14px;color:#4e4e4e;margin-top:-10px;*margin:0;letter-spacing:-1px;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/bg_chk.png) no-repeat 0 0;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:600;color:#1f1f1f}
+.chk_area .privacyInfo_area .userinfo_chk02 .on label{background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/bg_chk.png) no-repeat 0 -20px}
+.chk_area .privacyInfo_area .userinfo_chk02 a{color:#868686;text-decoration:underline;position:absolute;top:35px;left:350px;*line-height:21px;display:inline-block;font-size:14px;vertical-align:middle}
+
+/* 이벤트 완료 페이지 공통 */
+.e_complete{background:#fff;width:100%}
+.e_complete .cont{width:1140px;margin:0 auto;text-align:center;padding-top:50px}
+.e_complete .cont h3{font-size:32px;font-weight:800;color:#000;margin-bottom:38px}
+.e_complete .cont p{font-size:21px;line-height:34px;letter-spacing:-1px;font-weight:600;color:#111}
+.e_complete .cont p span{font-weight:bold;color:#0095da;text-decoration:underline}
+.e_complete .cont p.txt_thank{font-size:24px;line-height:34px;font-weight:bold;letter-spacing:-1px;margin-bottom:2px}
+.e_complete .cont a{margin:33px auto 70px auto;width:340px;display:block}
+
+/* 무료체험신청  */
+.lpop_freeApply_area{font-family:'Noto Sans KR',sans-serif;width:100%;height:100%;position:fixed;top:0;left:0; background: url(../../../cdndata.milkt.co.kr/ele/www/images/partner/170907/popup_bg.png); overflow: auto; display: none;z-index:9999}
+.m_freeApply_area{position:absolute;z-index:100;width:700px; top: 50%; left: 50%; margin-left:-350px;margin-top:-440px;background: #fff; margin-bottom: 50px}
+.m_freeApply_area .formlist .lpop_tit{position:relative; text-align: center; padding: 40px 0 14px}
+.m_freeApply_area .formlist .lpop_tit span.lpop_tit{font-size:28px;font-weight:bold;color:#1f1f1f;text-align:center}
+.m_freeApply_area .formlist .lpop_tit span.lpop_tit span{font-size:18px;font-weight:normal;display:block}
+.m_freeApply_area .formlist .lpop_tit span.lpop_tit em{color:#004478}
+.m_freeApply_area .formlist .lpop_tit>img{max-width: 472px}
+.m_freeApply_area .formlist .lpop_close{position:absolute;top:15px; right: 14px; margin-left: 0; width: 20px; height: 20px}
+.m_freeApply_area .formlist .lpop_close img {width: 100%}
+.m_freeApply_area .formlist form{ padding: 0 30px}
+.m_freeApply_area .formlist form .list{display:block; border: 1px solid #ccc; overflow: hidden; margin: 7px 0; padding: 5px 0}
+.m_freeApply_area .formlist form .mt0{margin-top:0; border-top: none; }
+.m_freeApply_area .formlist form .mb0{margin-bottom:0; border-bottom: 2px solid #f0f0f0; }
+.m_freeApply_area .formlist form .txt_class06{padding:6px 10px 7px 30px !important;line-height:3px;font-size:15px;color:#1f1f1f;letter-spacing:0px;line-height:1.4 !important;font-weight:100}
+.m_freeApply_area .formlist form .txt_class06 a{display:inline-block;width:auto;padding:0;margin:0 0 0 5px;height:16px;line-height:16px;background:#898989;font-size:12px;color:#fff}
+.m_freeApply_area .formlist form .txt_class06 a>span{padding:0 4px}
+.m_freeApply_area .formlist form .txt_class06 a>img{margin-top:-3px}
+.m_freeApply_area .formlist form .preschool{font-size:18px;font-weight:400;color:#1f1f1f;line-height:35px;padding-left:30px}
+.m_freeApply_area .formlist form .preschool em{font-size:12px;color:#fa3261;margin-left:22px}
+.m_freeApply_area .formlist label{float:left;line-height:38px;font-size:18px;color:#1f1f1f; padding-left: 30px; border-right: 1px solid #f0f0f0; width: 115px;font-weight:600}
+.m_freeApply_area .formlist form span+label+span{margin-top:-10px;height:12px}
+.m_freeApply_area .formlist input[type=text]{float:left;height:38px;line-height:38px;font-size:18px; margin-left: 30px; width: 337px;border:0;font-weight:100;color:#b2b2b2}
+.m_freeApply_area .formlist input[type=text]:focus{color:#1f1f1f}
+.m_freeApply_area .formlist form span a{display:inline-block;zoom:1;*display:inline; width:15%;height:38px;line-height:38px;margin-left:2%;text-align:center;color:#fff;font-size:12px}
+.m_freeApply_area .formlist form span a.btn01{background:#004478;font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif }
+.m_freeApply_area .formlist form span a.btn01>span{font-weight:400; font-size: 18px;color:#fff}
+.m_freeApply_area .formlist .selwrap{float:left; padding-left:20px;margin-right:10px;background: url(../../../cdndata.milkt.co.kr/ele/www/images/common/ico_select_arrow.png) 131px 15px no-repeat;background-size:20px}
+.m_freeApply_area .formlist .selwrap select{height:38px;line-height:38px;color:#333;font-size:18px;border:none; width:140px;font-weight:100}
+.m_freeApply_area .formlist .oneSel{float:left; padding-left:30px;margin-right:10px;}
+.m_freeApply_area .formlist .oneSel p{height:38px;line-height:38px;color:#333;font-size:18px;border:none;font-weight:100}
+.m_freeApply_area .formlist .oneSel p span{font-size:12px; color:#fa3261; display: inline-block; vertical-align: middle; margin-left: 20px;}
+.m_freeApply_area .formlist .chk_area {display:inline-block;*display:inline;*zoom:1;width:100%;margin:14px 0 6px;text-align:left;position:relative}
+.m_freeApply_area .formlist .chk_area .checkbox{position:relative;display:inline-block;*display:inline;*zoom:1;width:auto;margin:0;text-align:center;border-top:0}
+.m_freeApply_area .formlist .chk_area .checkbox input[type=checkbox]{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;z-index:1;width:15px;height:15px}
+.m_freeApply_area .formlist .chk_area .checkbox label{float:none;border:none;display:inline-block;*display:inline;*zoom:1;vertical-align:top;width:auto;height:22px;line-height:22px;padding:0 14px 0 10px;cursor:pointer;font-size:15px;letter-spacing:-1px;color:#646464;text-align:left;word-break:nowrap;font-weight:bold;font-family:Dotum}
+.m_freeApply_area .formlist .chk_area .checkbox .btn{display:inline-block;*display:inline;*zoom:1;vertical-align:top;width:auto;height:20px;line-height:22px;border-radius:3px;font-size:15px;color:#8c8c8c;word-break:nowrap;border-bottom:1px solid #8c8c8c;border-radius:0;font-weight:bold;font-family:Dotum}
+.m_freeApply_area .formlist .btn_submit{display:block;margin:5px auto 30px; text-align: center;width:240px;height:60px; }
+.m_freeApply_area .formlist .txt_grade{float:left;display:block;height:38px;line-height:38px;margin-left: 30px;font-size:21px;color:#333}
+.m_freeApply_area .formlist .txt_gradeinfo{font-size:16px;color:#ff5a5a;height:38px;line-height:38px;margin-left: 22px;}
+.m_freeApply_area .formlist .infoTxt_mid{height:60px;font-size:12px;color:#777;line-height:17px;display:block;word-break:break-all;letter-spacing:-1px;margin:-5px 0 5px}
+.m_freeApply_area .formlist .infoTxt_mid a{display:inline-block;width:185px;height:19px;line-height:19px;margin-left:344px;*margin-left:0}
+.m_freeApply_area .formlist .txt_noti{color:#2c5484;margin:0 0 20px;font-size:15px;font-weight:600}
+/* 무료체험 개인정보수집동의 */
+.m_freeApply_area .formlist .privacyInfo_area{text-align:left;font-family:'Noto Sans KR',sans-serif;}
+.m_freeApply_area .formlist .privacyInfo_area h3{font-size:15px;font-family:'Noto Sans KR',sans-serif;color:#1f1f1f}
+.m_freeApply_area .formlist .privacyInfo_area .terms_view{margin:13px 0 0px;vertical-align:middle;font-size:12px;line-height:14px;vertical-align:middle;font-family:'Noto Sans KR',sans-serif;}
+.m_freeApply_area .formlist .privacyInfo_area .terms_view span{display:inline-block;vertical-align:middle;*vertical-align:top}
+.m_freeApply_area .formlist .privacyInfo_area .terms_view a{vertical-align:middle;text-decoration:underline}
+.m_freeApply_area .formlist .privacyInfo_area .privacy_terms{border:1px solid #ccc; padding:20px;height:50px;overflow:hidden;overflow-y:scroll;margin-top:10px}
+.m_freeApply_area .formlist .promise_detail{border:0;overflow-x:hidden;color:#ccc;font-size:12px;line-height:16px;word-wrap:break-word;white-space:pre-line;*white-space:pre}
+.m_freeApply_area .formlist .promise_detail table.tbl_policy{width:510px;border-top:none;border-bottom:1px solid #e5e5e5}
+.m_freeApply_area .formlist .promise_detail table.tbl_policy th{height:28px;padding:0;background-color:#f5f5f5;border-top:1px solid #e5e5e5;border-right:1px solid #e5e5e5;color:#646464}
+.m_freeApply_area .formlist .promise_detail table.tbl_policy td{padding:7px !important;text-align:center;border-right:1px solid #e5e5e5;border-top:1px solid #e5e5e5}
+.m_freeApply_area .formlist .promise_detail table.tbl_policy td.alg_lieft{text-align:left}
+.m_freeApply_area .formlist .promise_detail table.tbl_policy td{word-break:keep-all}
+.m_freeApply_area .formlist .promise_detail table.tbl_policy tr:first-child th,
+.m_freeApply_area .formlist .promise_detail table.tbl_policy tr:first-child td{border-top:1px solid #e5e5e5}
+.m_freeApply_area .formlist .promise_detail table.tbl_policy tr th:first-child,
+.m_freeApply_area .formlist .promise_detail table.tbl_policy tr td:first-child{border-left:1px solid #e5e5e5}
+.m_freeApply_area .formlist .promise_detail table.tbl_policy tr td .redtxt{vertical-align:top;color:#c43636;font-weight:bold}
+.m_freeApply_area .formlist .userinfo_chk02{border-top:0;padding:0;margin:0;position:absolute;top:133px;right:5px;*right:35px}
+.m_freeApply_area .formlist .userinfo_chk02>span{position:relative;margin:10px 0 0 20px;*margin:10px 0 0 0px;display:inline-block}
+.m_freeApply_area .formlist .userinfo_chk02 input[type=radio]{margin:5px 0 0;width:0;height:0}
+.m_freeApply_area .formlist .userinfo_chk02 label{border-right:0;z-index:2;display:inline-block;width:auto;*width:95px;height:15px;line-height:15px;*line-height:18px;padding:0 0 0 23px;margin-top:-10px;*margin:0;letter-spacing:-1px;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/171212/img_chk.png) no-repeat 0 0}
+.m_freeApply_area .formlist .userinfo_chk02 .on label{background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/171212/img_chk.png) no-repeat 0 -15px}
+.m_freeApply_area .formlist .userinfo_chk02 a{color:#868686;text-decoration:underline;position:absolute;top:35px;left:350px;*line-height:21px;display:inline-block;font-size:14px;vertical-align:middle}
+
+/* 모바일 */
+@media screen and (max-width:720px) {
+    .chk_area .privacyInfo_area .userinfo_chk02 label{background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/170724/checkbox.png) no-repeat 0 0;background-size:20px}
+    .chk_area .privacyInfo_area .userinfo_chk02 .on label{background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/170724/checkbox.png) no-repeat 0 -20px;background-size:20px}
+}
+
+/* 모바일 */
+@media screen and (max-width:360px) {
+    .chk_area .privacyInfo_area h3{font-size:12px}
+    .chk_area .privacyInfo_area .userinfo_chk02 label{font-size:12px;}
+    .chk_area .privacyInfo_area .terms_view{font-size:12px}
+    .chk_area .privacyInfo_area .userinfo_chk02>span{margin:10px 0 0 5px}
+    .chk_area .privacyInfo_area .terms_view a{margin:0 0 0 2px}
+    .chk_area .privacyInfo_area .userinfo_chk02 label{padding:0 0 0 25px;}
+    .chk_area .privacyInfo_area .userinfo_chk02{bottom:-3px}
+}
+
+/* 상단 탑 배너 */
+.bn_headertop{position:relative;width:100%;height:180px;text-align:center}
+.bn_headertop .bn_area{position:relative;width:1140px;margin:0 auto}
+.bn_headertop .bn_area img{position:absolute;top:0;left:0}
+.bn_headertop .btn_close{position:absolute;top:20px;right:0}
+.bn_headertop.bn_171206{background:#043072}
+.bn_headertop.bn_171206 .bn_area .bn{background-color:#043072; width:1140px; height:180px}
+
+.bn_headertop.bn_171228{background:#234fb1;height:105px}
+.bn_headertop.bn_171228 .bn_area .bn{background-color:#234fb1; width:1140px; height:105px}
+.bn_headertop.bn_171228 .btn_close{position:absolute;top:20px;right:14px;z-index:2}
+.bn_headertop.bn_171228 a.event01{width:1140px;height:105px;display:block;position:absolute;top:0;left:0;text-indent:-9999px}
+
+.bn_headertop.bn_180416{background:url(../../../cdndata.milkt.co.kr/ele/www/images/main02/bflogin/bg_topTitle.jpg) center top no-repeat;height:220px}
+.bn_headertop.bn_180416 .bn_area .bn{background-color:#f5f5f5; width:1140px; height:220px}
+.bn_headertop.bn_180416 .btn_close{position:absolute;top:20px;right:14px;z-index:2}
+.bn_headertop.bn_180416 a.event01{width:1140px;height:220px;display:block;position:absolute;top:0;left:0;text-indent:-9999px}
+
+.milkt_tip{position:absolute;top:25px;left:50%;margin-left:118px;z-index:-1}
+.milkt_tip img{}
+.milkt_exp{position:absolute;top:33px;left:50%;margin-left:120px;z-index:-1}
+#aside .snb_area .lnb_quick{margin-top:20px}
+
+/* 테이블 신용카드 */
+table.tbl_comm01{table-layout:fixed;border-top:2px solid #3071b9;width:90%;margin:30px auto 0 auto;}
+table.tbl_comm01 caption{font-size:13px;visibility:visible;width:150px;height:20px;line-height:20px;text-align:left;margin-bottom:5px}
+table.tbl_comm01 tr th{width:100px;height:41px;border-right:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;color:#597488;font-size:13px;font-weight:600;text-align:left;padding-left:20px}
+table.tbl_comm01 tr td{height:41px;border-bottom:1px solid #d7d7d7;background:#fff;font-size:12px;text-align:left;padding-left:20px}
+table.tbl_comm01 tr td select{padding:3px 10px;font-size:13px}
+table.tbl_comm01 tr td input[type=text]{padding:3px 5px;font-size:13px;}
+table.tbl_comm01 tr td em{color:#ff6c00;font-size:14px;text-decoration:underline;font-weight:900}
+
+/* 무료체험신청 레이어 디자인 변경 181211  */
+.lpop_freeApply_box{font-family:'Noto Sans KR',sans-serif;width:100%;height:100%;position:fixed;top:0;left:0; background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/170907/popup_bg.png); overflow: auto; display: none;z-index:9999}
+.m_freeApply_box{position:absolute;z-index:100;width:672px; top: 50%; left: 50%; margin-left:-350px;margin-top:-336px;background: #fff; margin-bottom: 50px;height:680px;overflow-y:hidden}
+.m_freeApply_box .formlist .lpop_tit{position:relative; text-align: left; height:65px;background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/layerpop_bg.jpg) no-repeat 0 0}
+.m_freeApply_box .formlist .lpop_tit span.lpop_tit{font-size:24px;font-weight:bold;color:#fff;text-align:left;display:block;;padding:25px 0 0 25px;box-sizing:border-box}
+.m_freeApply_box .formlist .lpop_tit span.lpop_tit em{color:#fff}
+.m_freeApply_box .formlist .lpop_close{position:absolute;top:17px; right: 17px; margin-left: 0; width: 30px; height:30px}
+.m_freeApply_box .formlist .lpop_close img {width: 100%}
+.m_freeApply_box .formlist form{ padding:25px;box-sizing:border-box;height:465px;width:100%;overflow-y:scroll}
+.m_freeApply_box .formlist form h3.tit{background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/ico_poptitle.gif) left top no-repeat;font-size:16px;font-weight:600;color:#333;padding-left:13px;margin-bottom:14px}
+.m_freeApply_box .formlist form h3.tit.mt20{margin:20px 0 14px}
+.m_freeApply_box .formlist form .list{display:block; border: 1px solid #cccccc; overflow: hidden;padding:5px 0;margin-top:-1px}
+.m_freeApply_box .formlist form .list:first-child{margin-top:0}
+.m_freeApply_box .formlist form .chk_agent{display:block; border: 1px solid #cccccc; overflow: hidden;padding:5px 0 0 24px;margin-top:-1px;line-height:38px}
+.m_freeApply_box .formlist form .chk_agent input[type=checkbox]{position:absolute;top:1px;left:1px;z-index:0;margin:5px 0 0;width:0;height:0}
+.m_freeApply_box .formlist form .chk_agent span label{position:relative;border-right:0;z-index:2;display:inline-block;width:auto;*width:95px;height:19px;line-height:18px;*line-height:18px;padding:0 0 0 29px;font-size:15px;color:#1f1f1f;*margin:0;letter-spacing:-1px;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 0;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:600;}
+.m_freeApply_box .formlist form .chk_agent .on label{background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 -19px}
+.m_freeApply_box .formlist form .mt0{margin-top:0; border-top: none; }
+.m_freeApply_box .formlist form .mb0{margin-bottom:0; border-bottom: 2px solid #f0f0f0; }
+.m_freeApply_box .formlist form .txt_class06{padding:5px 10px 5px 25px !important;font-size:14px;color:#999;letter-spacing:0px;line-height:4px;background:#f1f5f8}
+.m_freeApply_box .formlist form .txt_class06 a{display:inline-block;width:auto;padding:0;font-size:16px;color:#0099cc;text-decoration:underline;font-weight:600;margin-left:0}
+.m_freeApply_box .visit_service{padding:0 0 8px;font-size:13px;color:#999!important}
+.m_freeApply_box .visit_service .tit{font-size:15px;color:#1f1f1f;font-weight:600;padding-top:14px;margin-bottom:9px}
+.m_freeApply_box .visit_service .chk_area{background:#e6f1f9;padding:14px 0;margin:10px 0 15px;text-align:center;width:auto}
+.m_freeApply_box .visit_service .chk_area span{width:150px;display:inline-block}
+.m_freeApply_box .visit_service .chk_area>span{position:relative;margin:10px 0 0 20px;*margin:10px 0 0 0px;display:inline-block}
+.m_freeApply_box .visit_service .chk_area span:first-child{margin-left:125px;width:230px}
+.m_freeApply_box .visit_service .chk_area input[type=radio]{position:absolute;top:1px;left:1px;z-index:0;margin:5px 0 0;width:0;height:0}
+.m_freeApply_box .visit_service .chk_area label{position:relative;border-right:0;z-index:2;display:inline-block;width:auto;*width:95px;height:19px;line-height:18px;*line-height:18px;padding:0 0 0 29px;font-size:15px;color:#1f1f1f;margin-top:-10px;*margin:0;letter-spacing:-1px;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 0;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:600;}
+.m_freeApply_box .visit_service .chk_area .on label{background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 -19px}
+/* 19.03 반영 */
+.m_freeApply_box .visit_service_v2{padding:0 0 8px;font-size:13px;color:#999!important}
+.m_freeApply_box .visit_service_v2:after{content:'';display:block;clear:both}
+.m_freeApply_box .visit_service_v2 .tit{background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/ico_poptitle.gif) left top no-repeat;font-size:16px;font-weight:600;color:#333;padding-left:13px;margin:20px 0 14px}
+.m_freeApply_box .visit_service_v2 .chk_area{background:#e6f1f9;text-align:center;width:390px !important;float:left;}
+.m_freeApply_box .visit_service_v2 .chk_area.left{width:210px !important;height:117px;margin-right:5px}
+.m_freeApply_box .visit_service_v2 .chk_area .chk_wrap{display:table-cell;vertical-align:middle;height:95px;padding:14px 0 7px;}
+.m_freeApply_box .visit_service_v2 .chk_area .chk_wrap span{width:100%;}
+.m_freeApply_box .visit_service_v2 .chk_area .chk_wrap>span{position:relative;margin:0px 0 5px 20px;*margin:10px 0 0 0px;display:block}
+.m_freeApply_box .visit_service_v2 .chk_area input[type=radio]{position:absolute;top:1px;left:1px;z-index:0;margin:5px 0 0;width:0;height:0}
+.m_freeApply_box .visit_service_v2 .chk_area label{position:relative;border-right:0;z-index:2;display:inline-block;width:auto;*width:95px;height:19px;line-height:18px;*line-height:18px;padding:0 0 0 29px;font-size:15px;color:#1f1f1f;*margin:0;letter-spacing:-1px;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 0;font-family:'Noto Sans KR',sans-serif;font-size:15px;font-weight:600;}
+.m_freeApply_box .visit_service_v2 .chk_area .on label{background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 -19px}
+.m_freeApply_box .chk_list_area{width:100%;margin-bottom:30px;}
+.m_freeApply_box .chk_list_area h5{padding-bottom:15px;}
+.m_freeApply_box .chk_list_area h5 span{font-size:20px;font-weight:bold;color:#333;}
+.m_freeApply_box .chk_list_area h5  u{color:#666;text-decoration:none;font-weight:normal;font-size:16px;}
+.m_freeApply_box .chk_list_area h5  input[type=checkbox]{position:absolute;top:1px;left:1px;z-index:0;margin:1px 0 0;width:0px;height:0px}
+.m_freeApply_box .chk_list_area h5  span label{position:relative;z-index:2;display:inline-block;width:100%;height:19px;line-height:18px;padding-left:35px;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 0;}
+.m_freeApply_box .chk_list_area h5  span.on label {background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 -19px;}
+.m_freeApply_box .chk_list_area ul li{border:1px solid #ccc; margin-top:-1px;width:100%;height:40px;color:#666;font-size:14px;padding:10px 20px;box-sizing:border-box;position:relative;background:#fff;}
+.m_freeApply_box .chk_list_area ul li u{color:#0095da;text-decoration:none;}
+.m_freeApply_box .chk_list_area ul li input[type=checkbox]{position:absolute;top:1px;left:1px;z-index:0;margin:1px 0 0;width:0px;height:0px}
+.m_freeApply_box .chk_list_area ul li span label{position:relative;z-index:2;display:inline-block;vertical-align:middle;width:70%;height:19px;line-height:20px;padding-left:30px;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 0;}
+.m_freeApply_box .chk_list_area ul li span.on label {background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 -19px;}
+.m_freeApply_box .chk_list_area ul li a{font-size:13px;color:#999;right:20px;top:13px;position:absolute;text-decoration:underline;line-height:1em;}
+.m_freeApply_box .visit_service{border-bottom:none!important;padding:0 0px 17px;font-size:13px;color:#1f1f1f}
+.m_freeApply_box .marketing_chk{width:100%;height:19px;position:relative;margin-bottom:15px;}
+.m_freeApply_box .marketing_chk u{font-size:14px;color:#999;font-weight:normal;text-decoration:none;display:inline-block;vertical-align:middle;margin-left:10px;}
+.m_freeApply_box .marketing_chk input[type=checkbox]{position:absolute;top:1px;left:1px;z-index:0;margin:1px 0 0;width:0px;height:0px}
+.m_freeApply_box .marketing_chk span label{position:relative;line-height:1.2em;z-index:2;display:inline-block;vertical-align:middle;width:100%;height:19px;padding-left:30px;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 0;font-size:18px;color:#0095da;font-weight:600}
+.m_freeApply_box .marketing_chk span{position:absolute;top:0;left:0;margin:0 0 0 0;display:inline-block;font-size:0;vertical-align:middle}
+.m_freeApply_box .marketing_chk span.on label {background:url(../../../cdndata.milkt.co.kr/ele/www/images/member/bg_chk01.gif) no-repeat 0 -19px;}
+.m_freeApply_box .txt_marketing_noti{font-size:13px;line-height:16px;color:#999;margin-bottom:20px;}
+.m_freeApply_box .formlist form .preschool{font-size:18px;font-weight:400;color:#1f1f1f;line-height:35px;padding-left:30px}
+.m_freeApply_box .formlist form .preschool em{font-size:12px;color:#fa3261;margin-left:22px}
+.m_freeApply_box .formlist .list label{float:left;line-height:45px;font-size:16px;color:#333; padding-left:25px; border-right: 1px solid #f0f0f0; width:90px;font-weight:600}
+.m_freeApply_box .formlist .list label.grade{line-height:75px}
+.m_freeApply_box .formlist form span+label+span{margin-top:-10px;height:12px}
+.m_freeApply_box .formlist input[type=text]{float:left;height:38px;line-height:38px;font-size:16px; margin-left: 22px; width:290px;border:0;font-weight:100;color:#999}
+.m_freeApply_box .formlist input[type=text]:focus{color:#333}
+.m_freeApply_box .formlist form span a{display:inline-block;zoom:1;*display:inline; width:120px;height:38px;line-height:38px;margin-left:10px;text-align:center;color:#fff;font-size:12px}
+.m_freeApply_box .formlist form span a.btn01{background:#0095da;font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif }
+.m_freeApply_box .formlist form span a.btn01>span{font-weight:400; font-size: 18px;color:#fff}
+.m_freeApply_box .formlist form .list_noti{display:block; border: 1px solid #cccccc; overflow: hidden;padding:5px 0;margin-top:-1px;background:#f1f5f8}/*인증번호 알림톡문구 추가 */
+.m_freeApply_box .formlist form .list_noti .txt{display:inline-block;color:#999;font-size:13px;padding:10px 24px}
+.m_freeApply_box .formlist .selwrap{float:left; padding-left:20px;margin-right:10px;background: url(../../../cdndata.milkt.co.kr/ele/www/images/common/ico_select_arrow_v2.png) 131px 15px no-repeat;background-size:10px}
+.m_freeApply_box .formlist .selwrap select{height:38px;line-height:38px;color:#333;font-size:16px;border:none; width:140px;font-weight:100}
+.m_freeApply_box .formlist .oneSel{float:left; padding-left:25px;margin-right:10px;}
+.m_freeApply_box .formlist .oneSel p{height:38px;line-height:38px;color:#333;font-size:16px;border:none;font-weight:100}
+.m_freeApply_box .formlist .oneSel p span{font-size:12px; color:#fa3261; display: inline-block; vertical-align: middle; margin-left: 20px;}
+.m_freeApply_box .formlist .chk_area {display:inline-block;*display:inline;*zoom:1;width:100%;margin:14px 0 6px;text-align:left;position:relative}
+.m_freeApply_box .formlist .chk_area .checkbox{position:relative;display:inline-block;*display:inline;*zoom:1;width:auto;margin:0;text-align:center;border-top:0}
+.m_freeApply_box .formlist .chk_area .checkbox input[type=checkbox]{display:inline-block;*display:inline;*zoom:1;vertical-align:middle;z-index:1;width:15px;height:15px}
+.m_freeApply_box .formlist .chk_area .checkbox label{float:none;border:none;display:inline-block;*display:inline;*zoom:1;vertical-align:top;width:auto;height:22px;line-height:22px;padding:0 14px 0 10px;cursor:pointer;font-size:15px;letter-spacing:-1px;color:#646464;text-align:left;word-break:nowrap;font-weight:bold;font-family:Dotum}
+.m_freeApply_box .formlist .chk_area .checkbox .btn{display:inline-block;*display:inline;*zoom:1;vertical-align:top;width:auto;height:20px;line-height:22px;border-radius:3px;font-size:15px;color:#8c8c8c;word-break:nowrap;border-bottom:1px solid #8c8c8c;border-radius:0;font-weight:bold;font-family:Dotum}
+.m_freeApply_box .formlist .txt_grade{float:left;display:block;height:38px;line-height:38px;margin-left: 30px;font-size:21px;color:#333}
+.m_freeApply_box .formlist .txt_gradeinfo{font-size:16px;color:#ff5a5a;height:38px;line-height:38px;margin-left: 22px;}
+.m_freeApply_box .formlist .infoTxt_mid{height:60px;font-size:12px;color:#777;line-height:17px;display:block;word-break:break-all;letter-spacing:-1px;margin:-5px 0 5px}
+.m_freeApply_box .formlist .infoTxt_mid a{display:inline-block;width:185px;height:19px;line-height:19px;margin-left:344px;*margin-left:0}
+.m_freeApply_box .formlist .txt_noti{color:#2c5484;margin:0 0 20px;font-size:15px;font-weight:600}
+.m_freeApply_box .formlist .txt_red{font-size:12px; color:#fa3261; font-weight:normal;text-align:center;display:block;}
+.m_freeApply_box .btn_submit{display:block; text-align: center;background:#0095da; width:235px;height:60px;box-sizing:border-box;line-height:1;padding-top:18px;margin:20px auto 0 auto}
+.m_freeApply_box .btn_submit span{color:#fff;font-weight:bold;font-size:24px;width:100%;height:60px;}
+.m_freeApply_box .call_section{position:absolute;bottom:0;}
+.m_freeApply_box .select{padding:6px 0 0 19px;float:left;width:360px;}
+.m_freeApply_box .select input[type=radio]{width:1px;height:1px}
+.m_freeApply_box .select label{z-index:2;display:block;position:absolute;top:0;left:0;width:70px;height:20px;line-height:20px !important;padding:0 0 0 28px;margin:0;cursor:pointer;background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/ico_radio.gif) no-repeat 0 0;font-size:14px;font-weight:100;color:#111;border-right:0 !important}
+.m_freeApply_box .select span{float:left;position:relative;width:86px;height:20px;margin-bottom:15px}
+.m_freeApply_box .select span:first-child{width:86px;}
+.m_freeApply_box .select .on label{background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/ico_radio.gif) no-repeat 0 -20px;}
+.m_freeApply_box .select span.last_grade a{width:266px !important;height:24px !important;background:#f1f5f8;border:1px solid #d8d8d8;font-size:16px;color:#404040 !important;line-height:24px !important;margin-left:0 !important;position:relative;padding-left:12px;text-align:left !important}
+.m_freeApply_box .select span.last_grade a:after{content:'';display:block;clear:both;background:url(../../../cdndata.milkt.co.kr/ele/www/images/partner/ico_freeExp_arrow.gif) no-repeat 0 7px;width:7px;height:19px;position:absolute;top:-1px;right:8px}
+.m_freeApply_box .select span.last_grade em{color:#0094da !important;}
+
+/* 190617 팝업 */
+.pop_join{padding:50px 0;text-align:center;font-size:18px;font-weight:400;color:#111;line-height:24px;width:500px}
+.pop_join p.txt_gray{font-size:16px;font-weight:400;color:#c0c0c0;margin-top:12px}
+.btn_join a{background:#009cea;width:240px;height:70px;text-align:center;font-size:18px;font-weight:400;color:#fff;line-height:15px;display:block;margin:0 auto}
+.btn_join a span.ico{background:url(../../../cdndata.milkt.co.kr/ele/www/images/common/ico_arrow.gif) left 100% no-repeat;width:7px;height:13px;text-indent:-9999px;display:inline-block;padding-top:30px;margin-left:20px}

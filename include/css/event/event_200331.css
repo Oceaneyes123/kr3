@@ -1,0 +1,105 @@
+.e_200319 div{text-align:center}
+.e_200319 .cont{width:100%;position:relative}
+.e_200319 .cont_wrap{width:1140px;margin:0 auto;position:relative}
+.e_200319 .cont01{background:#0f1eb0 url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/bg_event01.jpg) center top no-repeat;}
+.e_200319 .cont03{background:#f4f4f4 url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/bg_event03.png) left 260px repeat-x;}
+.e_200319 .cont04{background:#f4f4f4 url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/bg_event03.png) left 260px repeat-x;}
+.e_200319 .cont05{background:#0f1eb0;}
+.e_200319 .cont06{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/bg_event03.png) left 234px repeat-x}
+.e_200319 .cont07{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/bg_event07.jpg) center top no-repeat}
+.e_200319 .cont08{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/bg_event03.png) left 270px repeat-x}
+
+.e_200319 .cont01 {height:812px;text-align:left;}
+.e_200319 .cont01 .animated{-webkit-animation-duration: 0.3s;animation-duration: 0.3s;-webkit-animation-fill-mode: both;animation-fill-mode: both;}
+.e_200319 .cont01 .txtWrap{-webkit-animation-duration: 2.6s;animation-duration: 2.6s;animation-delay:0s;-webkit-animation-delay:0s;  -webkit-animation-name: fadeIn;animation-name: fadeIn;position:absolute;left:48px;top:160px;text-align:left;}
+.e_200319 .cont01 .txtWrap img{margin-bottom:25px}
+.e_200319 .cont01 .txt01{animation-delay:0.1s;display:block;vertical-align:middle; -webkit-animation-name: fadeIn;animation-name: fadeIn;position:absolute;left:0px;top:45px;}
+.e_200319 .cont01 .txt02{animation-delay:0.7s;display:block;vertical-align:middle; -webkit-animation-name: fadeIn;animation-name: fadeIn;margin-bottom:85px !important}
+.e_200319 .cont01 .txt03{animation-delay:1.2s;display:block;vertical-align:middle; -webkit-animation-name: fadeIn;animation-name: fadeIn;}
+.e_200319 .cont01 .txt04{animation-delay:1.7s;display:block;vertical-align:middle; -webkit-animation-name: fadeIn;animation-name: fadeIn;}
+
+.e_200319 .cont02 .cont_wrap {}
+.e_200319 .cont02 .cont_wrap .flexslider02 {width:1140px;height:619px;margin:0 auto;}
+.e_200319 .cont02 .cont_wrap .flexslider02:after{content:'';display:block;clear:both;}
+.e_200319 .cont02 .cont_wrap .flexslider02 .slides{zoom:1;margin:0 auto;}
+.e_200319 .cont02 .cont_wrap .flexslider02 .flex-viewport{height:607px;}
+.e_200319 .cont02 .cont_wrap .flexslider02 .slides li{position:relative;display:none;}
+.e_200319 .cont02 .cont_wrap .flexslider02 .slides img{max-width:100%;display:block;}
+.e_200319 .cont02 .flex-control-paging{}
+.e_200319 .cont02 .flex-control-paging li{ margin:0 8px; display:inline-block;*display:inline;*zoom:1;}
+.e_200319 .cont02 .flex-control-paging li:first-child{margin-left:0}
+.e_200319 .cont02 .flex-control-paging li a{ display:block;width:12px;height:12px;text-indent:-9999px;background:#b3b3b3;border-radius:30px}
+.e_200319 .cont02 .flex-control-paging li a.flex-active {width:32px;height:12px;background:#0f1eb0;cursor:default;}
+.e_200319 .cont02 .flex-control-paging li a:hover {background:#0f1eb0}
+
+.e_200319 .cont03{padding-bottom:0px}
+.e_200319 .cont03 .cnt{}
+.e_200319 .cont03 .tabSlide{position:relative;width:1140px;margin:0 auto;height:88px}
+.e_200319 .cont03 .tabSlide li{position:relative;display:inline-block;float:left;}
+.e_200319 .cont03 .tabSlide li a{width:380px;display:block;height:88px;text-indent:-9999px;font-size:0;background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/tab_cntwrap03.jpg) no-repeat 0 0;}
+.e_200319 .cont03 .tabSlide li.nav01 a{background-position:0 -88px;}
+.e_200319 .cont03 .tabSlide li.nav02 a{background-position:-380px 0;}
+.e_200319 .cont03 .tabSlide li.nav03 a{background-position:-760px 0;}
+.e_200319 .cont03 .tabSlide li.nav01.flex-active a{background-position:0 0px;}
+.e_200319 .cont03 .tabSlide li.nav02.flex-active a{background-position:-380px -88px;}
+.e_200319 .cont03 .tabSlide li.nav03.flex-active a{background-position:-760px -176px;}
+.e_200319 .cont03 .flexslider01{position:relative;width:1140px;margin:0 auto;box-sizing:border-box;}
+
+.e_200319 .cont05 .cont_wrap {height: 852px}
+.e_200319 .cont05 .cont_wrap .flexslider {position:absolute;left:106px;width:933px;height:449px;margin:0 auto;}
+.e_200319 .cont05 .cont_wrap .flexslider:after{content:'';display:block;clear:both;}
+.e_200319 .cont05 .cont_wrap .flexslider .slides{zoom:1;margin:0 auto;}
+.e_200319 .cont05 .cont_wrap .flexslider .flex-viewport{height:469px;}
+.e_200319 .cont05 .cont_wrap .flexslider .slides li{position:relative;display:none;}
+.e_200319 .cont05 .cont_wrap .flexslider .slides img{max-width:100%;display:block;}
+.e_200319 .cont05 .cont_wrap .flexslider .flex-direction-nav .flex-nav-prev {position:absolute;top:207px;left:-104px;z-index:11}
+.e_200319 .cont05 .cont_wrap .flexslider .flex-direction-nav .flex-nav-next a{position:absolute;top:207px;right:-104px;background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/btn_slide_arrow02.png) 0 0 no-repeat;z-index:11}
+.e_200319 .cont05 .cont_wrap .flexslider .flex-direction-nav a {display:block;width:45px;height:76px;background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/btn_slide_arrow01.png) 0 0 no-repeat;font-size:0;text-indent:-9999px;}
+.e_200319 .cont05 .flex-control-paging{margin-top:10px}
+.e_200319 .cont05 .flex-control-paging li{ margin:0 8px; display:inline-block;*display:inline;*zoom:1;}
+.e_200319 .cont05 .flex-control-paging li:first-child{margin-left:0}
+.e_200319 .cont05 .flex-control-paging li a{ display:block;width:12px;height:12px;text-indent:-9999px;background:#b3b3b3;border-radius:30px}
+.e_200319 .cont05 .flex-control-paging li a.flex-active {width:32px;height:12px;background:#00fcff;cursor:default;}
+.e_200319 .cont05 .flex-control-paging li a:hover {background:#00fcff}
+
+.e_200319 .cont07 .btn_area a{width:647px;height:118px;position:absolute;top:441px;left:50%;margin-left:-323.5px;display:block}
+.e_200319 .quickBtn {position:fixed;left:50%;top:125px;z-index:3;margin-left:590px;z-index:20;display:none}
+.e_200319 .quickBtn:after{content:"";display:block;clear:both;position:absolute;top:-45px;left:50%;margin-left:-55px;background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/190829/ico_quick.png) 0 0 no-repeat;width:110px;height:71px;z-index:4}
+.e_200319 .quickBtn a{position:relative;display:block;width:174px;height:174px;margin:0 0 5px;text-align:center;color:#ff704a;}
+.e_200319 .quickBtn a>span{display:block;width:174px;height:174px;font-size:0;line-height:0;text-indent:-9999px}
+.e_200319 .quickBtn a.btn_freeExp{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/190829/btn_freeExp.png) no-repeat 0 0;z-index:3}
+.e_200319 .quickBtn a.btn_review{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/190829/btn_review.png) no-repeat 0 0;margin-top:-30px;z-index:2}
+.e_200319 .quickBtn a.btn_apply{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/190829/btn_apply.png) no-repeat 0 0;margin-top:-30px;z-index:1}
+.e_200319 .quickBtn.changed a.btn_freeExp{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/190829/btn_freeExp.png) no-repeat 0 0;animation-name:btnchange;animation-duration:1s;z-index:3}
+.e_200319 .quickBtn.changed a.btn_review{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/190829/btn_review.png) no-repeat 0 0;animation-name:btnchange;animation-duration:1s;margin-top:-30px;z-index:2}
+.e_200319 .quickBtn.changed a.btn_apply{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/190829/btn_apply.png) no-repeat 0 0;animation-name:btnchange;animation-duration:1s;margin-top:-30px;z-index:1}
+.e_200319 .quickBtn.changed a.btn_top{background:url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200129/btn_top.png) no-repeat 0 0;animation-name:btnchange;animation-duration:1s;margin-top:-30px;z-index:1;width:71px;height:71px;margin:20px auto;text-align:center}
+
+
+.freeExp_process .txt_noti li{color:#222}
+.freeExp_process .step li:after{background: url(../../../../cdndata.milkt.co.kr/ele/www/images/partner/200331/ico_process_arrow.png) left top no-repeat}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
